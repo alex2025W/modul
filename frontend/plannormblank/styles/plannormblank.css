@@ -1,0 +1,81 @@
+#planNormBlank {
+  float: left;
+  width: 100%; }
+  #planNormBlank .input-prepend {
+    margin-bottom: 0px !important; }
+  #planNormBlank .input-append {
+    margin-bottom: 0px !important; }
+  #planNormBlank .btn {
+    margin: 0px; }
+  #planNormBlank .tberr {
+    background-color: #f00; }
+  #planNormBlank .cb {
+    float: left; }
+  #planNormBlank .bold {
+    font-weight: bold !important; }
+  #planNormBlank .font24 {
+    font-size: 24px !important; }
+  #planNormBlank .font16 {
+    font-size: 16px !important; }
+  #planNormBlank .font18 {
+    font-size: 18px !important; }
+  #planNormBlank .font14 {
+    font-size: 14px !important; }
+  #planNormBlank .font12 {
+    font-size: 12px !important; }
+  #planNormBlank .color-grey {
+    color: #333333 !important; }
+  #planNormBlank .color-lightgrey {
+    color: #999999 !important; }
+  #planNormBlank .color-black {
+    color: black !important; }
+  #planNormBlank .color-blue {
+    color: #4384e6 !important; }
+  #planNormBlank .color-red {
+    color: #ff0316 !important; }
+  #planNormBlank .color-yellow {
+    color: yellow !important; }
+  #planNormBlank .plan-norm-blank-body {
+    float: left;
+    width: 100%; }
+    #planNormBlank .plan-norm-blank-body .line {
+      width: 100%;
+      float: left; }
+    #planNormBlank .plan-norm-blank-body .data-header .item {
+      float: left;
+      font-weight: bold;
+      padding: 3px;
+      font-size: 1.0em; }
+    #planNormBlank .plan-norm-blank-body .data-options {
+      border-top: solid 1px #ccc;
+      padding-top: 20px;
+      margin-top: 10px; }
+    #planNormBlank .plan-norm-blank-body .data-container .item {
+      width: 100%;
+      float: left;
+      font-size: 1.0em; }
+      #planNormBlank .plan-norm-blank-body .data-container .item .cb {
+        float: left;
+        margin-top: 3px; }
+      #planNormBlank .plan-norm-blank-body .data-container .item label {
+        float: left; }
+      #planNormBlank .plan-norm-blank-body .data-container .item span {
+        float: left;
+        padding-left: 5px; }
+    #planNormBlank .plan-norm-blank-body .data-container .item-head .cb {
+      margin-top: 4px; }
+  #planNormBlank .control-panel {
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: right;
+    width: 100%;
+    border-top: solid 1px #999;
+    padding-top: 10px; }
+    #planNormBlank .control-panel .btn {
+      float: right;
+      margin-left: 10px; }
+
+.bootbox-confirm.modal {
+  width: 450px;
+  margin-left: -175px; }

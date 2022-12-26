@@ -1,0 +1,472 @@
+$blue1: #172CAF;
+$blue2: #2E3983;
+$blue3: #071672;
+$blue4: #4B5ED7;
+$blue5: #707ED7;
+$yellow: #fffbaa;
+
+$nodeBG: #bbb;
+$nodeFG: #444;
+$nodeExactMatch: mix($nodeBG, black, 60%);
+$nodeContainMatch: mix($nodeBG, black, 85%);
+$orange: #fa0;
+
+$plan: #696;
+$contract_plan:#0066cc;
+$fact: #966;
+$plan_child: #090;
+$fact_child: #f00;
+
+
+
+#app .foreground,
+#app .background {
+    fill: none;
+    pointer-events: all;
+}
+
+#app .notify{
+    fill: none;
+    pointer-events: all;
+    cursor: pointer;
+    display: none; // #1372
+}
+
+#app #canvas > .background {
+    cursor: -webkit-grab;
+
+    &.panning {
+        cursor: -webkit-grabbing;
+    }
+}
+
+// for debugging
+//
+// #app .plan-shift-background-start { fill: yellow; opacity: .7; }
+// #app .plan-shift-background-finish { fill: orange; opacity: .7; }
+// #app .foreground,
+// #app .background { fill: red; opacity: 0.7; }
+
+#app #today {
+    pointer-events: all;
+    opacity: 0.5;
+
+    rect {
+        fill: $blue5;
+    }
+    line {
+        stroke: darken($blue5, 20%);
+    }
+}
+
+#app #day-highlight {
+    pointer-events: all;
+    opacity: 0.4;
+
+    rect {
+        fill: $yellow;
+    }
+}
+
+#app #grid {
+    path,
+    line {
+        fill: none;
+        stroke: none;
+        shape-rendering: crispEdges;
+    }
+    .tick.major line {
+        stroke: #eee;
+    }
+    .tick.minor {
+        stroke: #eee;
+    }
+
+    .weekend {
+        fill: #eee;
+        fill-opacity: 0.5;
+    }
+    .month-ticks {
+        opacity: 0.5;
+        .tick {
+            stroke: #000;
+        }
+    }
+}
+
+#app #horizontal-grid {
+    line {
+        fill: none;
+        stroke: #999;
+        stroke-width: 1;
+        shape-rendering: crispEdges;
+    }
+}
+
+defs {
+    #plan-shift-arrow,
+    #plan-shift-dot {
+        fill: #777;
+        stroke: white;
+        stroke-width: 1px;
+        stroke-dasharray: 0;
+    }
+}
+
+#app #timelines {
+    pointer-events: all;
+    .timelines-container {
+        cursor: pointer;
+
+        .plan-timeline {
+            .date-range { fill: rgba($plan, 0.3); }
+            .date-intervals { rect { fill: $plan; } }
+            .contract-date-intervals { rect { fill: $contract_plan; y:-3; } }
+            .contract-date-range { fill: rgba($contract_plan, 0.3); y:-3; }
+        }
+        .fact-timeline {
+            .date-range { fill: rgba($fact, 0.3); }
+            .date-intervals { rect { fill: $fact; } }
+
+        }
+        &.hover {
+            .plan-timeline {
+                .date-range {
+                    fill: rgba($plan_child, 0.3);
+                }
+                .date-intervals {
+                    rect {
+                        fill: $plan_child;
+                        stroke: $plan_child;
+                        stroke-width: 2;
+                    }
+                }
+            }
+            .fact-timeline {
+                .date-range { fill: rgba($fact_child, 0.3); }
+                .date-intervals { rect { fill: $fact_child; } }
+            }
+        }
+        .plan-shifts {
+            .line-start,
+            .line-finish {
+                stroke: white;
+                stroke-width: 1;
+                stroke-dasharray: 2,2;
+                fill: none;
+            }
+            .line-start-shadow,
+            .line-finish-shadow {
+                stroke: #aaa;
+                stroke-width: 1;
+                stroke-dasharray: 2,2;
+                stroke-dashoffset: 2;
+                fill: none;
+            }
+        }
+
+
+        .statuses {
+            .done-label {
+                opacity: 0.5;
+                font-size: 17px;
+                font-weight: bolder;
+                text-anchor: middle;
+                dominant-baseline: central;
+                text-shadow: 0px 0px 1px white;
+            }
+
+            .line {
+                stroke-width: .3px;
+                opacity: 0.3;
+            }
+            .badge.key {
+                stroke-width: 4px;
+            }
+
+            .pauses {
+                $color: #3c3cbe;
+                stroke: $color;
+                fill: lighten($color, 20%);
+            }
+            .works_with_reject {
+                $color: #3c3cbe;
+                stroke: $color;
+                fill: lighten($color, 20%);
+            }
+            .work_with_reject {
+                $color: #3c3cbe;
+                stroke: $color;
+                fill: lighten($color, 20%);
+            }
+            .holds {
+                $color: #000;
+                stroke: $color;
+                fill: lighten($color, 20%);
+            }
+            .nodata {
+                stroke: black;
+                fill: white;
+            }
+        }
+
+        &.child {
+            .plan-timeline {
+                .date-range { fill: rgba($plan_child, 0.3); }
+                .date-intervals { rect { fill: $plan_child; } }
+            }
+            .fact-timeline {
+                .date-range { fill: rgba($fact_child, 0.3); }
+                .date-intervals { rect { fill: $fact_child; } }
+                .detalization {
+                    .fact-record {
+                        fill: $fact_child;
+                        stroke: none;
+                    }
+                    text {
+                        font-weight: bold;
+                        fill: $fact_child;
+                        text-anchor: middle;
+
+                        transition: fill .3s;
+                        &.lighten {
+                            fill: mix($fact_child, white , 30);
+                        }
+                    }
+                }
+            }
+        }
+
+        rect.cell-badge {
+            $fill: #ccc;
+            fill: $fill;
+            stroke: darken($fill, 10%);
+
+            &.has-new {
+                fill: orange;
+                stroke: darken(orange, 10%);
+            }
+        }
+        .cell-badge-text {
+            text-anchor: end;
+            font-size: 9px;
+            fill: black;
+
+            &.has-new {
+                fill: white;
+            }
+        }
+        .date-intervals rect,
+        .date-range {
+            transition: fill .1s;
+        }
+    }
+}
+
+#app #nodes .node {
+    .label div {
+        box-sizing: border-box;
+
+        background: $nodeBG;
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+        padding: 0 7px;
+        font-size: 14px;
+        color: black;
+
+        transition: background .1s;
+
+        .description {
+            display: block;
+            font-size: 10px;
+            line-height: 9px;
+        }
+    }
+
+    &.troubleshooting {
+        .label div {
+            border: 3px dashed mix(black, $nodeBG, 25);
+        }
+    }
+    &.troubleshooting.workorder {
+        .label div {
+            border-color: mix(black, $nodeBG, 70);
+        }
+    }
+
+    &.hover {
+        .label div {
+            background: mix($orange, white, 40) !important;
+            box-shadow: 0 0 0 3px $orange inset;
+        }
+    }
+
+    &.selected {
+        .label div {
+            background: $orange !important;
+        }
+    }
+
+    &.empty {
+        cursor: default;
+
+        .label div {
+            color: #494949;
+        }
+    }
+
+    &.linked,
+    &.exact_match {
+        .label div {
+            background: $nodeExactMatch;
+            color: white;
+        }
+    }
+
+    &.contain_match {
+        .label div {
+            background: $nodeContainMatch;
+        }
+    }
+}
+
+
+#app #menu-del-dia {
+    cursor: pointer;
+    font-family: FontAwesome;
+
+    a {
+        fill: #888;
+        text-anchor: middle;
+        dominant-baseline: central;
+
+        text:hover {
+            fill: black;
+        }
+    }
+
+    .filter-button {
+        text-anchor: middle;
+        dominant-baseline: central;
+        font-size: 20px;
+    }
+
+}
+
+#day-select {
+    pointer-events: all;
+
+    rect {
+        fill: rgba($orange, 0.2);
+        stroke: $orange;
+    }
+}
+
+#axis {
+    cursor: pointer;
+
+    .axis {
+        path,
+        line {
+            fill: none;
+            stroke: black;
+            shape-rendering: crispEdges;
+        }
+        .domain {
+            display: none;
+        }
+
+        &.days {
+            text {
+                transition: font-size 0.15s;
+                font-family: sans-serif;
+                font-size: 11px;
+                fill: #333;
+                text-shadow: 0px 1px 1px #fff;
+            }
+
+            &.selected {
+                text {
+                    fill: #888;
+                }
+                .selected-day {
+                    text {
+                        fill: black;
+                    }
+                }
+
+            }
+        }
+
+        &.months {
+            .month-names {
+                opacity: 0.12;
+                .name {
+                    font-size: 60px;
+                    font-weight: bold;
+                }
+            }
+            .month-ticks {
+                opacity: 0.5;
+            }
+        }
+
+    }
+}
+
+#date-ranges {
+    .plan, .fact {
+        transition: fill .3s, stroke .3s;
+    }
+    path {
+        stroke-width: 3;
+        shape-rendering: crispEdges;
+    }
+    text {
+        text-anchor: end;
+        font-size: 10px;
+        stroke: none;
+    }
+    .plan {
+        stroke: $plan;
+        fill: $plan;
+
+        &.child {
+            stroke: $plan_child;
+            fill: $plan_child;
+        }
+    }
+    .fact {
+        stroke: $fact;
+        fill: $fact;
+
+        &.child {
+            stroke: $fact_child;
+            fill: $fact_child;
+        }
+    }
+}
+
+#cell-highlight {
+    $color: #f5f5dc;
+    .link {
+        fill: $color;
+        stroke: darken($color, 50%);
+        opacity: 0.3;
+    }
+
+    .mark {
+        fill: $color;
+        stroke: darken($color, 60%);
+    }
+}
+
+#node-flash,
+#cell-flash {
+    // $color: #f5f5dc;
+    $color: orange;
+    // fill: darken($color, 40%);
+    fill: $color;
+
+}

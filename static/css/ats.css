@@ -1,0 +1,101 @@
+#ats {
+  float: left;
+  width: 100%; }
+  .tb-note { font-size: 12px; }
+  #ats .input-prepend {
+    margin-bottom: 0px !important; }
+  #ats .input-append {
+    margin-bottom: 0px !important; }
+  #ats .btn.btn-small {
+    font-size: 11px;
+    padding: 0 1px;
+    text-align: center;
+    margin: auto;
+    width: 55px; }
+  #ats .btn {
+      margin: 0;
+  }
+  #ats .tberr {
+    background-color: #f00; }
+  #ats .cb {
+    float: left; }
+  #ats .bold {
+    font-weight: bold !important; }
+  #ats .font24 {
+    font-size: 24px !important; }
+  #ats .font16 {
+    font-size: 16px !important; }
+  #ats .font18 {
+    font-size: 18px !important; }
+  #ats .font14 {
+    font-size: 14px !important; }
+  #ats .font12 {
+    font-size: 12px !important; }
+  #ats .color-grey {
+    color: #333333 !important; }
+  #ats .color-lightgrey {
+    color: #999999 !important; }
+  #ats .color-black {
+    color: black !important; }
+  #ats .color-blue {
+    color: #4384e6 !important; }
+  #ats .color-red {
+    color: #ff0316; }
+  #ats .color-yellow {
+    color: yellow !important; }
+  #ats .tb-count {
+    width: 100px; }
+  #ats .navbar {
+    margin-bottom: 10px; }
+  #ats .lbl-light {
+    color: #999;
+    font-size: 12px; }
+  #ats .lbl-error {
+    color: #f00;
+    font-size: 12px; }
+  #ats .list-pager {
+    text-align: center;
+    font-size: 18px; }
+  #ats .list-pager span.over {
+    color: #666; }
+  #ats .list-pager span.cur {
+    font-weight: bold;
+    padding: 0 3px; }
+  #ats .list-pager a {
+    padding: 0 3px;
+    cursor: pointer; }
+  #ats .control-panel {
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: right;
+    width: 100%;
+    border-top: solid 1px #999;
+    padding-top: 10px; }
+    #ats .control-panel .btn {
+      float: right;
+      margin-left: 10px; }
+  #ats .in-info {
+    width: 100%;
+    font-size: 11px;
+    margin-bottom: 5px; }
+    #ats .in-info td {
+      padding: 4px;
+      vertical-align: top; }
+    #ats .in-info tbody td {
+      border: dotted 1px #ccc; }
+    #ats .in-info .tr-comment td {
+      border: solid 1px #ccc;
+      border-top: none; }
+    #ats .in-info thead {
+      font-weight: bold; }
+      #ats .in-info thead td {
+        border: dotted 1px #ccc; }
+    #ats .in-info tr.head {
+      font-weight: bold; }
+    #ats .in-info tr:hover {
+      background-color: whitesmoke; }
+
+.bootbox-confirm.modal {
+  width: 450px;
+  margin-left: -175px; }

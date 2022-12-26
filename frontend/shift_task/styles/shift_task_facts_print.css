@@ -1,0 +1,143 @@
+/* body{
+        font-family: courier;
+}*/
+#shift_task_facts {
+  display: none; }
+
+header {
+  display: none; }
+
+.lnk-sel {
+  background-color: #ffff00;
+  color: #000; }
+
+#section-to-print {
+  /*display: block!important;*/
+  padding: 20px !important;
+  font-family: courier;
+  /* float:left;
+  width:100%; */ }
+  #section-to-print .input-prepend {
+    margin-bottom: 0px !important; }
+  #section-to-print .input-append {
+    margin-bottom: 0px !important; }
+  #section-to-print .btn {
+    margin: 0px; }
+  #section-to-print .tberr {
+    background-color: #f00; }
+  #section-to-print .cb {
+    float: left; }
+  #section-to-print .bold {
+    font-weight: bold !important; }
+  #section-to-print .font24 {
+    font-size: 24px !important; }
+  #section-to-print .font16 {
+    font-size: 16px !important; }
+  #section-to-print .font18 {
+    font-size: 18px !important; }
+  #section-to-print .font14 {
+    font-size: 14px !important; }
+  #section-to-print .font12 {
+    font-size: 12px !important; }
+  #section-to-print .color-1 {
+    color: #cccccc !important; }
+  #section-to-print .color-2 {
+    color: #CC0000 !important; }
+  #section-to-print .color-3 {
+    color: #0000CC !important; }
+  #section-to-print .color-grey {
+    color: #333 !important; }
+  #section-to-print .color-lightgrey {
+    color: #999 !important; }
+  #section-to-print .color-black {
+    color: #000 !important; }
+  #section-to-print .color-blue {
+    color: #4384e6 !important; }
+  #section-to-print .color-red {
+    color: #ff0316; }
+  #section-to-print .color-yellow {
+    color: #ffff00 !important; }
+  #section-to-print .tb-count {
+    width: 100px; }
+  #section-to-print .navbar {
+    margin-bottom: 10px; }
+  #section-to-print .error {
+    background: #FFE0E0; }
+  #section-to-print .nav {
+    margin-bottom: 0px; }
+  #section-to-print .tb {
+    margin: 0px; }
+  #section-to-print .center {
+    text-align: center; }
+  #section-to-print .bordered-black {
+    border: solid 1px #000 !important; }
+    #section-to-print .bordered-black td {
+      border: solid 1px #000 !important;
+      /*height: 100px!important;*/
+      padding: 15px 3px 15px 3px !important;
+      font-size: 14px !important; }
+  #section-to-print .black-border {
+    border-right: solid 1px #000 !important; }
+  #section-to-print .not_active {
+    color: #999 !important; }
+  #section-to-print .icon-link {
+    cursor: pointer; }
+  #section-to-print .data-body {
+    float: left;
+    width: 100%;
+    margin-top: 15px; }
+    #section-to-print .data-body .tb-fact-box {
+      width: 100px; }
+    #section-to-print .data-body .tb {
+      width: 50px !important; }
+    #section-to-print .data-body .lbl-header {
+      font-size: 12px; }
+    #section-to-print .data-body .line {
+      width: 100%;
+      float: left; }
+    #section-to-print .data-body .data-header .item {
+      float: left;
+      font-weight: bold;
+      padding: 3px;
+      font-size: 1.0em; }
+    #section-to-print .data-body .data-options {
+      border-top: solid 1px #ccc;
+      padding-top: 20px;
+      margin-top: 10px; }
+    #section-to-print .data-body .data-container .data {
+      font-size: 12px;
+      width: 100%; }
+      #section-to-print .data-body .data-container .data thead {
+        font-weight: bold; }
+      #section-to-print .data-body .data-container .data td {
+        padding: 4px;
+        vertical-align: top; }
+      #section-to-print .data-body .data-container .data .cb-templates-combo {
+        display: inline;
+        position: relative;
+        opacity: 1;
+        margin-right: 5px; }
+    #section-to-print .data-body .data-container .bordered td {
+      border: solid 1px #ccc; }
+  #section-to-print .in-info {
+    width: 100%;
+    font-size: 11px;
+    margin-bottom: 5px; }
+    #section-to-print .in-info td {
+      padding: 4px;
+      vertical-align: top; }
+    #section-to-print .in-info tbody td {
+      border: dotted 1px #ccc; }
+    #section-to-print .in-info .tr-comment td {
+      border: solid 1px #ccc;
+      border-top: none; }
+    #section-to-print .in-info thead {
+      font-weight: bold; }
+      #section-to-print .in-info thead td {
+        border: dotted 1px #ccc; }
+    #section-to-print .in-info tr.head {
+      font-weight: bold; }
+    #section-to-print .in-info tr:hover {
+      background-color: whitesmoke; }
+
+/*# sourceMappingURL=shift_task_facts_print.css.map */

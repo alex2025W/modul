@@ -1,0 +1,34 @@
+.edit-material-box {
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 10px; }
+  .edit-material-box .removed td {
+    background-color: #f00; }
+  .edit-material-box .edit-box {
+    width: 100%;
+    font-size: 12px; }
+    .edit-material-box .edit-box tfoot td {
+      border-bottom: none;
+      text-align: right; }
+    .edit-material-box .edit-box td {
+      padding: 4px;
+      vertical-align: middle;
+      border-bottom: dashed 1px #ccc;
+      box-sizing: border-box; }
+      .edit-material-box .edit-box td.left {
+        min-width: 250px; }
+      .edit-material-box .edit-box td.right {
+        width: 100%; }
+    .edit-material-box .edit-box tr.head {
+      font-weight: bold;
+      font-size: 14px; }
+    .edit-material-box .edit-box .tb {
+      width: 98%;
+      margin: 0px; }
+    .edit-material-box .edit-box .ddl {
+      width: auto; }
+    .edit-material-box .edit-box .err {
+      background-color: #f00; }
+
+/*# sourceMappingURL=edit_material.css.map */

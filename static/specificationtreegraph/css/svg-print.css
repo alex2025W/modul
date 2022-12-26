@@ -1,0 +1,32 @@
+.groups rect.screen {
+  visibility: hidden; }
+.groups rect.print {
+  visibility: visible; }
+
+.node circle.screen {
+  visibility: hidden; }
+.node circle.print {
+  visibility: visible; }
+.node text {
+  fill: black;
+  stroke: white;
+  stroke-width: 5px;
+  paint-order: stroke; }
+
+.link {
+  stroke: black;
+  stroke-width: 0.5px;
+  transition: none; }
+
+.guide line {
+  stroke: black;
+  stroke-width: 0.1px; }
+.guide text {
+  font-size: 16px !important;
+  stroke: white;
+  stroke-width: 5px !important;
+  fill: black;
+  paint-order: stroke; }
+
+#anchor {
+  visibility: hidden; }

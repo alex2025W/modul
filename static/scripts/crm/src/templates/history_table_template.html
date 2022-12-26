@@ -1,0 +1,199 @@
+<style>
+    .selectize-control.client-contacts {
+        margin-top: -10px;
+        margin-bottom: 20px;
+    }
+    .enter-history {
+        overflow: hidden !important;
+    }
+    .select-item-title, select-item-note i, .selectize-input .name {
+        font-size: 12px;
+    }
+    .select-item {
+        max-height: 36px;
+        padding: 1px 7px 7px !important;
+        margin: 0 !important;
+        border-bottom: 1px solid #D3D3D3 !important;
+    }
+    .selectize-dropdown-content {
+        height: 125px !important;
+    }
+    .selectize-input {
+        height: 31px !important;
+        padding: 4px 10px;
+    }
+    .condition-select {
+
+    }
+</style>
+
+<div class="span12">
+  <div class="row">
+    <table class="table history-table">
+      <caption class="text-left"><strong>История состояний:</strong></caption>
+      <thead>
+        <tr>
+          <th><strong>Дата</strong></th>
+          <th><strong>Состояние</strong></th>
+          <th><strong>Вероятность</strong></th>
+          <th><strong>Закрытие</strong></th>
+          <th><strong>Менеджер</strong></th>
+          <th><strong>Инициатор</strong></th>
+          <th><strong><nowrap>Конт.&nbsp;лицо</nowrap></strong></th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+  <div class="row enter-history">
+    <div class="span4 a-mr-20">
+      <div class="control-group">
+        <label class="control-label" >Состояние:</label>
+        <div class="controls">
+          <select class="span4 condition-select">
+              <% _(window.DICTS.condition).each(function(row) { %>
+                <option data-price="<%= row['price'] %>" data-structure="<%= row['structure'] %>"  data-sq="<%= row['sq']? row['sq'] : 'disabled' %>" data-property="<%= row['property'] %>" value="<%= row['_id'] %>" <%= (row['name']==window.ORDER_CONDITIONS['CONTRACT_SIGN'])?'style="display:none"':'' %> ><%= row['name'] %></option>
+              <% }); %>
+          </select>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label" style="display:inline-block;">Инициатор контакта:</label>
+        <div class="controls" style="display:inline-block;">
+          <label class="radio" style="display:inline-block;"><input type="radio" name="initiator-contract" value="we" />Мы</label>&nbsp;&nbsp;&nbsp;
+          <label class="radio" style="display:inline-block;"><input type="radio" name="initiator-contract" value="they" />Они</label>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label" style="display:inline-block;">Конт. лицо:</label>
+        <div class="controls" style="display:inline-block;">
+          <!--<input-->
+              <!--style="width:150px;"-->
+              <!--autocomplete="off"-->
+              <!--class="client-contacts"-->
+              <!--value=""-->
+              <!--type="text">-->
+
+              &nbsp;
+              <a href="javascript:;" class="refresh-contacts"><i class="fa fa-refresh"></i></a>
+              &nbsp;
+              <a href="/client-card/<%= client_id %>" target="_newtab" class="goto-contacts"><i class="fa fa-users"></i></a>
+        </div>
+      </div>
+        <select style="width:100%;" class="client-contacts" data-val=''></select>
+        <div class="control-group">
+        <label class="control-label" >Вероятность заказа: <strong class="chance-value">Не определена</strong></label>
+        <div class="controls">
+          <input type="text" class="span4 chance-slider" data-slider-min="0" data-slider-tooltip="hide" data-slider-max="100" data-slider-step="10" data-slider-value="0" >
+        </div>
+      </div>
+    </div>
+    <div class="span7 a-w-100">
+      <div class="control-group hideme otkaz-block">
+        <label class="control-label" >Причина отказа:</label>
+        <div class="controls">
+          <select class="span4 otkaz-select">
+            <option value="0">Укажите причину</option>
+            <% _(window.DICTS.reason).each(function(row) {
+                if(row!="Автозакрытие"){%>
+                <option value="<%= row %>"><%= row %></option>
+            <% }}); %>
+          </select>
+        </div>
+      </div>
+      <div class="control-group hideme review-block">
+        <label class="control-label" >Причина:</label>
+        <div class="controls">
+          <select class="span4 review-select">
+          <option value="0">Укажите причину</option>
+          <% _(window.DICTS.review).each(function(row) {
+                if(row!="Автозакрытие"){%>
+              <option value="<%= row %>"><%= row %></option>
+          <% }}); %>
+            <option value="Другое">Другое</option>
+          </select>
+        </div>
+      </div>
+      <div class="control-group hideme interes-block">
+        <label class="control-label" >Вид интереса:</label>
+        <div class="controls">
+          <select class="span4 interes-select">
+          <option value="0">Укажите вид интереса</option>
+          <% _(window.DICTS.interests).each(function(row) { %>
+              <option value="<%= row %>"><%= row %></option>
+          <% }); %>
+          <option value="Другое">Другое</option>
+          <option value="Бесперспективный клиент">Бесперспективный клиент</option>
+          </select>
+        </div>
+      </div>
+      <div class="control-group hideme contract-link-block" style="float:left; width:100%;">
+        <!-- <label class="radio"><input type="radio" checked name="contract-link-vaiant" value="create" />Создать новый договор</label> -->
+        <label class="radio" style="float:left; margin:7px 10px 0 0;"><input checked type="radio" value="choose" name="contract-link-vaiant" />Привязать к существующему договору</label>&nbsp;&nbsp;<div class="contract-number-block" style="float:left;z-index:9999;" ><input placeholder="Номер договора" class="contract-number" type="text" /></div>
+      </div>
+      <div class="control-group a-w-100" style="clear: both;">
+        <label class="control-label">Примечание:</label>
+        <div class="controls">
+          <textarea class="span7 comment-text a-w-100" rows="5" ></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" style = "margin-top:10px;">
+    <div class="span12" style = "margin-top: 20px;  border: dashed 1px #aaa;  padding: 10px;  width: 600px;">
+      <!--==Finish date==-->
+      <div class="control-group" style = "width:300px; float: left;">
+        <label class="control-label" >Дата сдачи объекта:</label>
+        <div class="controls">
+          <label class="control-label" style = "padding-bottom:5px; width:130px; "><input class = "cb-nofinish-date" type = "checkbox" <%= (!cur_finish_date)?"checked":""%>  /> <span style = "color:#777;">не определена</span></label>
+          <input type="text" readonly class="span2 finish-date" style = "<%= (!cur_finish_date)?'display:none':''%>"  value="<%=cur_finish_date%>"/>
+          <a href="javascript:;" class="change-finish-date" data-date="" data-date-format="dd.mm.yyyy" style = "<%= (!cur_finish_date)?'display:none':''%>">
+              <span class="add-on"><i class="icon-calendar"></i></span>
+          </a>
+          <div style = "display: none">
+            <label class="control-label lbl-finish-confirmed-by-client" style = "padding-top:5px; width:200px; <%= (!cur_finish_date)?'display:none':''%>"><input class = "cb-finish-confirmed-by-client" type = "checkbox" <%= (finish_confirmed_by_client)?"checked":""%>  /> <span style = "color:#777;">подтверждена клиентом</span></label>
+          </div>
+        </div>
+      </div>
+      <!--==Close date==-->
+      <div class="control-group" style = "width:300px; float: left;">
+        <label class="control-label" >Дата подписания договора: </label>
+        <div class="controls">
+        <label class="control-label" style = "padding-bottom:5px; width:130px; "><input class = "cb-noclose-date" type = "checkbox" <%= (!cur_close_date)?"checked":""%>  /> <span style = "color:#777;">не определена</span></label>
+        <input type="text" readonly class="span2 close-date" style = "<%= (!cur_close_date)?'display:none':''%>"  value="<%=cur_close_date%>"/>
+        <a href="javascript:;" class="change-close-date" data-date="" data-date-format="dd.mm.yyyy" style = "<%= (!cur_close_date)?'display:none':''%>">
+            <span class="add-on"><i class="icon-calendar"></i></span>
+        </a>
+        <label class="control-label lbl-confirmed-by-client" style = "padding-top:5px; width:200px; <%= (!cur_close_date)?'display:none':''%>"><input class = "cb-confirmed-by-client" type = "checkbox" <%= (confirmed_by_client)?"checked":""%>  /> <span style = "color:#777;">подтверждена клиентом</span></label>
+        </div>
+      </div>
+      <!--===-->
+    </div>
+  </div>
+
+
+  <div class="row" style = "margin-top:10px;">
+    <div class="span12">
+      <div class="alert dogovor-block" style="display:none; margin:0px;">
+        <b class="fa fa-exclamation-triangle"></b>&nbsp;<span>Будет создан договор</span>
+      </div>
+      <div class="alert perfect-price-alert" style="display:none;margin:0px;">
+      <b class="fa fa-exclamation-triangle"></b>&nbsp;<span></span>&nbsp;&nbsp;
+      <a class="btn btn-danger check-price-ok" href="javascript:;">ОК</a> <a class="btn check-price-cancel" href="javascript:;">отмена</a>
+      </div>
+      <div class="alert close-order-alert" style="display:none;margin:0px;">
+      <b class="fa fa-exclamation-triangle"></b>&nbsp;<span>С таким состоянием заявка будет закрыта. Продолжить?</span>&nbsp;&nbsp;<a class="btn btn-danger save-history-ok" href="javascript:;">Да</a> <a class="btn save-history-cancel" href="javascript:;">нет</a>
+      </div>
+      <div class="alert chance-alert" style="display:none;margin:0px;">
+      <b class="fa fa-exclamation-triangle"></b>&nbsp;<span>Вероятность не изменилась?</span>&nbsp;&nbsp;<a href="javascript:;" class="btn btn-success save-history-ok">Сохранить</a>
+      <a href="javascript:;" class="btn close-history-any">Закрыть</a>
+      </div>
+      <div style = "margin-top:50px">
+      <a href="javascript:;" class="btn btn-success save-history">Сохранить</a>
+      <a href="javascript:;" class="btn close-history">Закрыть</a>
+    </div>
+    </div>
+  </div>
+</div>

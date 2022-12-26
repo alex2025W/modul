@@ -1,0 +1,81 @@
+#errors{
+	float:left;
+	width:100%;
+
+	.input-prepend
+	{
+		margin-bottom:0px!important;
+	}
+	.input-append
+	{
+		margin-bottom:0px!important;
+	}
+	.btn
+	{
+		margin:0px;
+	}
+
+	.tberr{
+		background-color: #f00;
+	}
+
+	.cb{
+		float:left;
+	}
+
+	.errors-body{
+		float:left;
+		width:100%;
+		.line{
+			width:100%;
+			float:left;
+		}
+		.bold{
+			font-weight: bold;
+		}
+		.data-header{
+			.item{
+				float:left;
+				font-weight:bold;
+				padding:3px;
+				font-size: 1.0em;
+			}
+		}
+		.data-container{
+			.data-item{
+				border-bottom: solid 1px #ddd;
+				margin-bottom:10px;
+				.item{
+					float:left;
+					padding:3px;
+					font-size: 14px;
+					font-size: 1.0em;
+
+					.tb{
+						float:left;
+						width:80%;
+					}
+					.cb{
+						float:left;
+						margin-left:50%;
+						margin-top:6px;
+					}
+				}
+			}
+		}
+	}
+	.control-panel{
+		float:left;
+		margin-top:20px;
+		margin-bottom:20px;
+		float:right;
+		width:100%;
+		border-top:solid 1px #999;
+		padding-top:10px;
+
+		.btn{
+			float:right;
+			margin-left:10px;
+		}
+	}
+}

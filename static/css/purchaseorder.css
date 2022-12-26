@@ -1,0 +1,100 @@
+#purchaseorder {
+  float: left;
+  width: 100%; }
+  #purchaseorder .input-prepend {
+    margin-bottom: 0px !important; }
+  #purchaseorder .input-append {
+    margin-bottom: 0px !important; }
+  #purchaseorder .btn {
+    margin: 0px; }
+  #purchaseorder .tberr {
+    background-color: #f00; }
+  #purchaseorder .cb {
+    float: left; }
+  #purchaseorder .bold {
+    font-weight: bold !important; }
+  #purchaseorder .font24 {
+    font-size: 24px !important; }
+  #purchaseorder .font16 {
+    font-size: 16px !important; }
+  #purchaseorder .font18 {
+    font-size: 18px !important; }
+  #purchaseorder .font14 {
+    font-size: 14px !important; }
+  #purchaseorder .font12 {
+    font-size: 12px !important; }
+  #purchaseorder .color-grey {
+    color: #333333 !important; }
+  #purchaseorder .color-lightgrey {
+    color: #999999 !important; }
+  #purchaseorder .color-black {
+    color: black !important; }
+  #purchaseorder .color-blue {
+    color: #4384e6 !important; }
+  #purchaseorder .color-red {
+    color: #ff0316; }
+  #purchaseorder .color-yellow {
+    color: yellow !important; }
+  #purchaseorder .purchaseorder-body {
+    float: left;
+    width: 100%; }
+    #purchaseorder .purchaseorder-body .lbl-header {
+      font-size: 20px; }
+    #purchaseorder .purchaseorder-body .line {
+      width: 100%;
+      float: left; }
+    #purchaseorder .purchaseorder-body .data-header .item {
+      float: left;
+      font-weight: bold;
+      padding: 3px;
+      font-size: 1.0em; }
+    #purchaseorder .purchaseorder-body .data-options {
+      border-top: solid 1px #ccc;
+      padding-top: 20px;
+      margin-top: 10px; }
+    #purchaseorder .purchaseorder-body .data-container {
+      margin-top: 20px; }
+      #purchaseorder .purchaseorder-body .data-container .item {
+        width: 100%;
+        float: left;
+        font-size: 1.0em; }
+        #purchaseorder .purchaseorder-body .data-container .item .cb {
+          float: left;
+          margin-top: 3px; }
+        #purchaseorder .purchaseorder-body .data-container .item label {
+          float: left; }
+        #purchaseorder .purchaseorder-body .data-container .item span {
+          float: left;
+          padding-left: 5px; }
+      #purchaseorder .purchaseorder-body .data-container .item-head .cb {
+        margin-top: 4px; }
+  #purchaseorder .control-panel {
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: right;
+    width: 100%;
+    border-top: solid 1px #999;
+    padding-top: 10px; }
+    #purchaseorder .control-panel .btn {
+      float: right;
+      margin-left: 10px; }
+  #purchaseorder .in-info {
+    width: 100%;
+    font-size: 11px; }
+    #purchaseorder .in-info td {
+      padding: 4px;
+      vertical-align: top; }
+    #purchaseorder .in-info .tr-info td {
+      border: solid 1px #ccc; }
+    #purchaseorder .in-info .tr-comment td {
+      border: solid 1px #ccc;
+      border-top: none; }
+    #purchaseorder .in-info thead {
+      font-weight: bold; }
+      #purchaseorder .in-info thead td {
+        border: solid 1px #ccc; }
+
+.bootbox-confirm.modal {
+  width: 450px;
+  margin-left: -175px; }

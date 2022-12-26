@@ -1,0 +1,123 @@
+#brief {
+  float: left;
+  width: 100%; }
+  #brief .input-prepend {
+    margin-bottom: 0px !important; }
+  #brief .input-append {
+    margin-bottom: 0px !important; }
+  #brief .btn {
+    margin: 0px; }
+  #brief .tberr {
+    background-color: #f00; }
+  #brief .cb {
+    float: left; }
+  #brief .bold {
+    font-weight: bold !important; }
+  #brief .font24 {
+    font-size: 24px !important; }
+  #brief .font16 {
+    font-size: 16px !important; }
+  #brief .font18 {
+    font-size: 18px !important; }
+  #brief .font14 {
+    font-size: 14px !important; }
+  #brief .font12 {
+    font-size: 12px !important; }
+  #brief .color-grey {
+    color: #333333 !important; }
+  #brief .color-lightgrey {
+    color: #999999 !important; }
+  #brief .color-black {
+    color: black !important; }
+  #brief .color-blue {
+    color: #4384e6 !important; }
+  #brief .color-red {
+    color: #ff0316; }
+  #brief .color-yellow {
+    color: yellow !important; }
+  #brief .css-treeview label.h1 {
+    font-size: 22px; }
+  #brief .css-treeview li.h1 {
+    margin-top: 10px; }
+  #brief .css-treeview label.h2 {
+    font-size: 20px; }
+  #brief .css-treeview li.h2 {
+    margin-top: 8px; }
+  #brief .css-treeview label.h3 {
+    font-size: 16px; }
+  #brief .css-treeview li.h3 {
+    margin-top: 6px; }
+  #brief .css-treeview label.h4 {
+    font-size: 14px; }
+  #brief .css-treeview li.h4 {
+    margin-top: 4px; }
+  #brief .css-treeview label.h5 {
+    font-size: 12px; }
+  #brief .css-treeview li.h5 {
+    margin-top: 2px; }
+  #brief .css-treeview li.lbl-info {
+    color: #666;
+    font-size: 12px; }
+  #brief .brief-body {
+    float: left;
+    width: 100%; }
+    #brief .brief-body .lbl-header {
+      font-size: 20px; }
+    #brief .brief-body .line {
+      width: 100%;
+      float: left; }
+    #brief .brief-body .data-header .item {
+      float: left;
+      font-weight: bold;
+      padding: 3px;
+      font-size: 1.0em; }
+    #brief .brief-body .data-options {
+      border-top: solid 1px #ccc;
+      padding-top: 20px;
+      margin-top: 10px; }
+    #brief .brief-body .data-container {
+      margin-top: 20px; }
+      #brief .brief-body .data-container .item {
+        width: 100%;
+        float: left;
+        font-size: 1.0em; }
+        #brief .brief-body .data-container .item .cb {
+          float: left;
+          margin-top: 3px; }
+        #brief .brief-body .data-container .item label {
+          float: left; }
+        #brief .brief-body .data-container .item span {
+          float: left;
+          padding-left: 5px; }
+      #brief .brief-body .data-container .item-head .cb {
+        margin-top: 4px; }
+  #brief .control-panel {
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: right;
+    width: 100%;
+    border-top: solid 1px #999;
+    padding-top: 10px; }
+    #brief .control-panel .btn {
+      float: right;
+      margin-left: 10px; }
+  #brief .in-info {
+    width: 100%;
+    font-size: 11px; }
+    #brief .in-info td {
+      padding: 4px;
+      vertical-align: top; }
+    #brief .in-info .tr-info td {
+      border: solid 1px #ccc; }
+    #brief .in-info .tr-comment td {
+      border: solid 1px #ccc;
+      border-top: none; }
+    #brief .in-info thead {
+      font-weight: bold; }
+      #brief .in-info thead td {
+        border: solid 1px #ccc; }
+
+.bootbox-confirm.modal {
+  width: 450px;
+  margin-left: -175px; }

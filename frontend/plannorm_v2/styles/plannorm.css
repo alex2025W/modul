@@ -1,0 +1,951 @@
+.wait * {
+  cursor: wait !important;
+}
+
+.bootbox-confirm.modal {
+  width: 450px;
+  margin-left: -175px;
+}
+
+.delimetr {
+  display: inline;
+  color: #000;
+}
+
+.import-category-dlg {
+  width: 530px;
+  margin-left: -270px;
+  padding: 0;
+  height: 480px;
+}
+
+.import-category-dlg .modal-body {
+  padding-right: 10px;
+}
+
+.import-category-dlg .lbl-order-number {
+  font-size: 14px !important;
+  padding-left: 0px;
+  margin-top: 10px;
+  font-weight: bold;
+  float: left;
+}
+
+.import-category-dlg .lbl-hint {
+  color: #999 !important;
+  font-size: 11px;
+  font-style: italic;
+  padding-top: 5px;
+  display: inline-block;
+}
+
+.import-category-dlg .token-input-list-facebook {
+  width: 150px !important;
+  border: none !important;
+  border-bottom: 1px solid #8496ba !important;
+  display: inline-block !important;
+  margin-left: 10px;
+}
+
+.import-category-dlg .token-input-list-facebook .token-input-input-token-facebook {
+  background: none !important;
+}
+
+.import-category-dlg .token-input-list-facebook .token-input-input-token-facebook input {
+  background: none !important;
+}
+
+.import-category-dlg .token-input-list-facebook li input {
+  width: 150px !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.import-category-dlg .radio {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.import-category-dlg .ddl {
+  margin-top: 3px;
+  width: 400px;
+}
+
+.bulk-data-insert-dlg {
+  width: 420px;
+  margin-left: -200px;
+  padding: 0;
+  height: 470px;
+}
+
+.bulk-data-insert-dlg .modal-body {
+  padding-right: 10px;
+}
+
+.bulk-data-insert-dlg .lbl-hint {
+  color: #999 !important;
+  font-size: 11px;
+  font-style: italic;
+  padding-top: 5px;
+  display: inline-block;
+}
+
+.in-info {
+  width: 100%;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.in-info .inner-line {
+  width: 100%;
+  float: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 4px 0px;
+  border-bottom: solid 1px #ccc;
+  min-height: 39px;
+}
+
+.in-info .inner-line:last-child {
+  border-bottom: none;
+}
+
+.in-info .inner-line a {
+  margin-top: 6px;
+}
+
+.in-info td {
+  padding: 4px;
+  vertical-align: middle;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.in-info tbody td {
+  border: dotted 1px #ccc;
+}
+
+.in-info tbody td.digit {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.in-info thead {
+  font-weight: bold;
+}
+
+.in-info thead td,
+.in-info thead th {
+  padding: 4px;
+  border: dotted 1px #ccc;
+  white-space: nowrap;
+  text-align: left;
+  background: #eee;
+}
+
+.in-info tfoot {
+  font-weight: bold;
+}
+
+.in-info tfoot td,
+.in-info tfoot th {
+  padding: 4px;
+  text-align: left;
+  /*border:dotted 1px #ccc;*/
+  border: none;
+  white-space: nowrap;
+}
+
+.in-info tr.head {
+  font-weight: bold;
+}
+
+.in-info tr:hover {
+  background-color: whitesmoke !important;
+}
+
+.in-info tr.selected {
+  background-color: #dbe1ec;
+}
+
+#plannorm {
+  float: left;
+  width: 100%;
+}
+
+#plannorm .plannorm-wrapper.wrap {
+  width: 100%;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#plannorm .left-side {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 25%;
+          flex: 1 0 25%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0px 20px 20px 0px;
+  min-width: 440px;
+}
+
+#plannorm .left-side .navbar {
+  width: 400px;
+}
+
+#plannorm .left-side .navbar.fixed {
+  position: fixed;
+  top: 10px;
+}
+
+#plannorm .left-side .lbl-order-number {
+  font-size: 20px;
+  float: left;
+  margin-top: 5px;
+}
+
+#plannorm .left-side ul.token-input-list-facebook {
+  width: 150px !important;
+  border: none !important;
+  border-bottom: 1px solid #8496ba !important;
+  display: inline-block !important;
+  margin-left: 10px;
+}
+
+#plannorm .left-side ul.token-input-list-facebook li input {
+  width: 150px !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#plannorm .right-side {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 75%;
+          flex: 1 1 75%;
+  position: relative;
+  overflow: hidden;
+}
+
+#plannorm .main-data-container {
+  padding: 10px 0px;
+}
+
+#plannorm .input-prepend {
+  margin-bottom: 0px !important;
+}
+
+#plannorm .input-append {
+  margin-bottom: 0px !important;
+}
+
+#plannorm .btn {
+  margin: 0px;
+}
+
+#plannorm .tberr {
+  background-color: #f00;
+}
+
+#plannorm .cb {
+  float: left;
+}
+
+#plannorm .bold {
+  font-weight: bold !important;
+}
+
+#plannorm .font24 {
+  font-size: 24px !important;
+}
+
+#plannorm .font16 {
+  font-size: 16px !important;
+}
+
+#plannorm .font18 {
+  font-size: 18px !important;
+}
+
+#plannorm .font14 {
+  font-size: 14px !important;
+}
+
+#plannorm .font12 {
+  font-size: 12px !important;
+}
+
+#plannorm .font11 {
+  font-size: 11px !important;
+}
+
+#plannorm .italic {
+  font-style: italic;
+}
+
+#plannorm .color-grey {
+  color: #333 !important;
+}
+
+#plannorm .color-lightgrey {
+  color: #999 !important;
+}
+
+#plannorm .color-black {
+  color: #000 !important;
+}
+
+#plannorm .color-blue {
+  color: #4384e6 !important;
+}
+
+#plannorm .color-red {
+  color: #ff0316;
+}
+
+#plannorm .color-yellow {
+  color: #ffff00 !important;
+}
+
+#plannorm .bcolor-yellow {
+  background: #ffff00 !important;
+}
+
+#plannorm .tb-count {
+  width: 100px;
+}
+
+#plannorm .navbar {
+  margin-bottom: 10px;
+}
+
+#plannorm .lbl-light {
+  color: #999;
+  font-size: 12px;
+}
+
+#plannorm .lbl-error {
+  color: #f00;
+  font-size: 12px;
+}
+
+#plannorm .tb-note {
+  font-size: 12px;
+}
+
+#plannorm .tb-order-number {
+  width: 100px;
+}
+
+#plannorm .maximize {
+  float: right;
+}
+
+#plannorm .maximize .lnk {
+  display: inline;
+  cursor: pointer;
+  color: #0066cc;
+  border-bottom: dotted 1px #0066cc;
+  text-decoration: none;
+}
+
+#plannorm .maximize .lnk:hover {
+  border-bottom: none;
+}
+
+#plannorm .maximize .delimetr {
+  display: inline;
+  color: #000;
+}
+
+#plannorm .list-pager {
+  text-align: center;
+  font-size: 18px;
+}
+
+#plannorm .list-pager span.over {
+  color: #666;
+}
+
+#plannorm .list-pager span.cur {
+  font-weight: bold;
+  padding: 0 3px;
+}
+
+#plannorm .list-pager a {
+  padding: 0 3px;
+  cursor: pointer;
+}
+
+#plannorm .pnl-order-info .lbl {
+  font-size: 18px;
+  display: inline-block;
+}
+
+#plannorm .pnl-order-info .lbl-light {
+  font-size: 16px;
+  display: inline-block;
+  padding-top: 10px;
+  color: #999;
+}
+
+#plannorm .control-panel {
+  padding: 20px;
+  min-height: 50px;
+}
+
+#plannorm .control-panel .btn-google {
+  cursor: pointer;
+}
+
+#plannorm .control-panel .btn {
+  float: right;
+  margin-left: 10px;
+}
+
+#plannorm .control-panel .pnl-group-by {
+  float: left;
+  display: inline-block;
+  margin: 15px 0px 3px 0px;
+}
+
+#plannorm .control-panel .pnl-group-by label,
+#plannorm .control-panel .pnl-group-by span {
+  display: inline-block;
+}
+
+#plannorm .control-panel .pnl-group-by .group-header {
+  font-size: 16px;
+  padding-right: 10px;
+}
+
+#plannorm .control-panel .pnl-group-by label.checkbox {
+  margin-right: 10px;
+}
+
+#plannorm .control-panel .token-input-list-facebook {
+  background: none !important;
+}
+
+#plannorm .control-panel .token-input-list-facebook .token-input-input-token-facebook {
+  background: none !important;
+}
+
+#plannorm .control-panel .token-input-list-facebook .token-input-input-token-facebook input {
+  background: none !important;
+}
+
+#plannorm .control-panel .pnl-create-new-specification,
+#plannorm .control-panel .pnl-link-specification {
+  float: left;
+  font-size: 12px;
+  border: dashed 1px #ccc;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 10px;
+}
+
+#plannorm .control-panel .pnl-create-new-specification .lbl-order-number,
+#plannorm .control-panel .pnl-link-specification .lbl-order-number {
+  font-size: 14px !important;
+  padding-left: 0px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#plannorm .control-panel .lnk-import-category {
+  display: inline-block;
+}
+
+#plannorm .control-panel .accordion-toggle {
+  display: inline-block;
+  padding: 8px 15px 8px 10px;
+  width: 93%;
+}
+
+#plannorm .pnl-search {
+  width: 100%;
+  margin: 20px 0px 0px 0px;
+  float: left;
+}
+
+#plannorm .pnl-search .pnl-prop-values {
+  list-style-type: none;
+}
+
+#plannorm .data-list-body a {
+  display: inline;
+}
+
+#plannorm .data-list-body .icon-link {
+  margin-left: 4px;
+}
+
+#plannorm .cb-checker {
+  position: initial;
+  opacity: initial;
+  /*margin: 4px 0px -10px 0px;*/
+  display: initial;
+}
+
+#plannorm .data-body div.alert-info {
+  background: #fff;
+}
+
+#plannorm .data-body .tb {
+  margin-bottom: 0px;
+}
+
+#plannorm .data-body .table-footer {
+  margin-top: 30px;
+  line-height: 20px;
+}
+
+#plannorm .data-body .item-category,
+#plannorm .data-body .item-group {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#plannorm .css-treeview {
+  /*overflow:hidden;*/
+}
+
+#plannorm .css-treeview label.h1 {
+  font-size: 18px;
+}
+
+#plannorm .css-treeview li.h1 {
+  margin-top: 1px;
+}
+
+#plannorm .css-treeview label.h2 {
+  font-size: 16px;
+}
+
+#plannorm .css-treeview li.h2 {
+  margin-top: 0px;
+}
+
+#plannorm .css-treeview label.h3 {
+  font-size: 14px;
+}
+
+#plannorm .css-treeview li.h3 {
+  margin-top: 0px;
+}
+
+#plannorm .css-treeview label.h4 {
+  font-size: 12px;
+}
+
+#plannorm .css-treeview li.h4 {
+  margin-top: 0px;
+}
+
+#plannorm .css-treeview label.h5 {
+  font-size: 12px;
+}
+
+#plannorm .css-treeview li.h5 {
+  margin-top: 0px;
+}
+
+#plannorm .css-treeview li.lbl-info {
+  color: #666;
+  font-size: 12px;
+}
+
+#plannorm .css-treeview li {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5px 2px 0px 2px;
+}
+
+#plannorm .css-treeview .underline-ccc {
+  border-bottom: solid 1px #ccc;
+}
+
+#plannorm .css-treeview .lbl-item {
+  width: 100%;
+  position: relative;
+  padding-left: 25px;
+  min-height: 35px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#plannorm .css-treeview .lbl-item::before {
+  position: absolute;
+  left: 5px;
+  top: 3px;
+}
+
+#plannorm .css-treeview .lbl-item:hover {
+  background-color: whitesmoke;
+}
+
+#plannorm .css-treeview .lbl-item.selected {
+  background-color: #dbe1ec;
+}
+
+#plannorm .css-treeview .lbl-in {
+  padding: 4px;
+  float: left;
+}
+
+#plannorm .css-treeview .lbl-plus {
+  z-index: 10;
+  margin-left: 2px;
+}
+
+#plannorm .css-treeview label {
+  margin: 0px;
+}
+
+#plannorm .css-treeview .data {
+  width: 100%;
+}
+
+#plannorm .css-treeview .cb-item-check,
+#plannorm .css-treeview .remark-chk {
+  position: initial !important;
+  opacity: initial !important;
+  display: initial !important;
+}
+
+#plannorm .css-treeview input:checked + label.lbl-item::before {
+  font-family: FontAwesome;
+  content: "\f147";
+}
+
+#plannorm .css-treeview label.lbl-item::before {
+  background: none !important;
+  line-height: normal;
+  font-family: FontAwesome;
+  content: "\f196";
+}
+
+#plannorm .pnl-search-box {
+  margin: 0px 0px 20px 2px !important;
+}
+
+#plannorm #materials-data-body-container .lnk-remove-from-calculate {
+  display: block;
+  text-align: center;
+  color: #06c;
+  cursor: pointer;
+}
+
+#plannorm #materials-data-body-container .lbl-already-in-calculate {
+  display: block;
+  text-align: center;
+  color: #06c;
+}
+
+#plannorm #materials-data-body-container .lnk-add-to-calculate {
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  color: #000;
+}
+
+#plannorm #materials-data-body-container .lnk-add-to-calculate:hover {
+  color: #06c;
+}
+
+#plannorm #materials-data-body-container .active {
+  background: #d8ffd8 !important;
+}
+
+#plannorm #materials-data-body-container .active td {
+  background: #d8ffd8 !important;
+}
+
+#plannorm #materials-data-body-container .not-standart {
+  font-style: italic;
+}
+
+#plannorm #materials-data-body-container .table-footer {
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 0px;
+  background: #dbe1ec;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#plannorm #materials-data-body-container .table-footer .row {
+  width: 100%;
+}
+
+#plannorm #materials-data-body-container .table-footer .btn-save {
+  float: right;
+}
+
+#plannorm #materials-data-body-container .edit-material-container {
+  width: 900px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#plannorm #specification-materials-data-body-container .data-list input,
+#plannorm #specification-materials-data-body-container .data-list select {
+  margin: 0px !important;
+  font-size: 12px;
+}
+
+#plannorm #specification-materials-data-body-container .value {
+  width: 54px;
+}
+
+#plannorm #specification-materials-data-body-container .value input {
+  width: 40px;
+}
+
+#plannorm #specification-materials-data-body-container .note {
+  width: 150px;
+}
+
+#plannorm #specification-materials-data-body-container .note input {
+  width: 150px;
+}
+
+#plannorm #specification-materials-data-body-container .allowance {
+  width: 40px;
+}
+
+#plannorm #specification-materials-data-body-container .allowance input {
+  width: 40px;
+}
+
+#plannorm #specification-materials-data-body-container .yellow {
+  background: #ff0 !important;
+}
+
+#plannorm #specification-materials-data-body-container .status {
+  width: 110px;
+}
+
+#plannorm #specification-materials-data-body-container .status select {
+  width: 110px;
+  padding-right: 0;
+}
+
+#plannorm #specification-materials-data-body-container .status_0 {
+  background: #fff;
+}
+
+#plannorm #specification-materials-data-body-container .status_1 {
+  background: #e0fee0;
+}
+
+#plannorm #specification-materials-data-body-container .status_2 {
+  background: #ffcccc;
+}
+
+#plannorm #specification-materials-data-body-container .status_3 {
+  background: #ffe6b7;
+}
+
+#plannorm #specification-materials-data-body-container .status_4 {
+  background: #fff;
+}
+
+#plannorm #specification-materials-data-body-container .status_5 {
+  background: #d5ebf2;
+}
+
+#plannorm #specification-materials-data-body-container .dropdown-menu {
+  overflow: auto !important;
+  max-width: 500px;
+}
+
+#plannorm #specification-materials-data-body-container .dropdown-menu .checkbox,
+#plannorm #specification-materials-data-body-container .dropdown-menu .radio {
+  padding-left: initial !important;
+}
+
+#plannorm #specification-materials-data-body-container .dropdown-menu .active {
+  background-color: #fff !important;
+}
+
+#plannorm #specification-materials-data-body-container .dropdown-menu input {
+  float: initial !important;
+}
+
+#plannorm #specification-materials-data-body-container .dropdown-menu label {
+  font-size: 12px;
+}
+
+#plannorm #specification-materials-data-body-container .dropdown-menu li {
+  padding: 0px !important;
+}
+
+#plannorm #specification-materials-data-body-container .btn-link {
+  padding: 0px;
+  font-size: 12px;
+  text-align: left;
+}
+
+#plannorm #specification-materials-data-body-container .lnk {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0px 5px;
+  color: #000;
+}
+
+#plannorm #specification-materials-data-body-container .lnk:hover {
+  color: #06c;
+}
+
+#plannorm #specification-materials-data-body-container .table-footer {
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 0px;
+  background: #dbe1ec;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#plannorm #specification-materials-data-body-container .table-footer .row {
+  width: 100%;
+}
+
+#plannorm #specification-materials-data-body-container .table-footer .btn-save {
+  float: right;
+}
+
+#plannorm #groups-calculation-data-body-container .css-treeview {
+  width: 700px;
+}
+
+#plannorm #groups-calculation-data-body-container li {
+  position: relative;
+}
+
+#plannorm #groups-calculation-data-body-container .lbl-item {
+  border-bottom: dotted 1px #ccc;
+}
+
+#plannorm #groups-calculation-data-body-container .item-group::before {
+  display: none;
+}
+
+#plannorm #groups-calculation-data-body-container .control-item-box {
+  position: absolute;
+  right: 3px;
+  top: 5px;
+  width: 260px;
+  height: 25px;
+}
+
+#plannorm #groups-calculation-data-body-container .control-item-box span.lbl, #plannorm #groups-calculation-data-body-container .control-item-box span.lnk {
+  vertical-align: top;
+  padding-top: 3px;
+  display: inline-block;
+}
+
+#plannorm #groups-calculation-data-body-container .control-item-box input {
+  width: 200px !important;
+  font-size: 14px;
+  height: 18px;
+}
+
+#plannorm #groups-calculation-data-body-container .summ {
+  margin-top: 20px;
+  float: right;
+}
+
+#plannorm #groups-calculation-data-body-container .summ .lbl {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#plannorm #plan-norm-history {
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#plannorm #plan-norm-history div.production {
+  float: left;
+  width: 100%;
+  border-bottom: dashed 1px #999;
+  padding: 10px;
+}
+
+#plannorm #plan-norm-history div.production .title {
+  float: left;
+  font-size: 18px;
+  padding-bottom: 4px;
+}
+
+#plannorm #plan-norm-history div.production .empty {
+  float: left;
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+  color: #666;
+}
+
+#plannorm #plan-norm-history div.production .change-more-data {
+  display: none;
+  background: #fffbdb;
+  padding: 0;
+}
+
+#plannorm #plan-norm-history div.production .change-more-data td.change-more-data-td {
+  padding: 0;
+  border: none;
+}
+
+#plannorm #plan-norm-history div.production table {
+  width: 100%;
+}
+
+#plannorm #plan-norm-history div.production table th {
+  border: solid 1px #ddd;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#plannorm #plan-norm-history div.production table td {
+  vertical-align: middle;
+  padding: 5px;
+  border: solid 1px #ddd;
+}
+
+#plannorm #plan-norm-history div.production table td.modified {
+  background: #e6ffdd;
+}
+
+#plannorm #plan-norm-history div.production.odd {
+  background: #f3f6fb;
+}
+
+#plannorm #pnlMainDataBox .table-footer {
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 0px;
+  background: #dbe1ec;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#plannorm #pnlMainDataBox .table-footer .row {
+  width: 100%;
+}
+
+#plannorm #pnlMainDataBox .table-footer .btn-save-all, #plannorm #pnlMainDataBox .table-footer .btn-save-all-and-close {
+  float: right;
+  margin-left: 10px;
+}
+/*# sourceMappingURL=plannorm.css.map */

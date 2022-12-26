@@ -1,0 +1,14 @@
+<footer>
+    <span class="lbl" style = "margin-right:10px;"><%=('title' in obj)?title:'Документы'%></span>
+    <button class="btn btn-warning pull-right" id="cancel-uploads-button"><i class="icon-cancel"></i>Отменить все</button>
+    <span class="lnk fileinput-button" id="fileinput-button">
+        <span>Загрузить</span>
+        <input class="fileupload" type="file" name="files[]" multiple="multiple">
+    </span>
+
+    <button class="btn btn-primary" id="start-uploads-button"><i class="icon-start"></i>Сохранить документы</button>
+</footer>
+<div class="popover-content file-list file-list"  >
+    <div class="no-data" style = "display:none"><em>Добавьте документы для загрузки..</em></div>
+</div>
+

@@ -1,0 +1,78 @@
+#stats {
+  float: left;
+  width: 100%; }
+  #stats .input-prepend {
+    margin-bottom: 0px !important; }
+  #stats .input-append {
+    margin-bottom: 0px !important; }
+  #stats .btn {
+    margin: 0px; }
+  #stats .tberr {
+    background-color: #f00; }
+  #stats .cb {
+    float: left; }
+  #stats .bold {
+    font-weight: bold !important; }
+  #stats .font24 {
+    font-size: 24px !important; }
+  #stats .font16 {
+    font-size: 16px !important; }
+  #stats .font18 {
+    font-size: 18px !important; }
+  #stats .font14 {
+    font-size: 14px !important; }
+  #stats .font12 {
+    font-size: 12px !important; }
+  #stats .color-grey {
+    color: #333333 !important; }
+  #stats .color-lightgrey {
+    color: #999999 !important; }
+  #stats .color-black {
+    color: black !important; }
+  #stats .color-blue {
+    color: #4384e6 !important; }
+  #stats .color-red {
+    color: #ff0316; }
+  #stats .color-yellow {
+    color: yellow !important; }
+  #stats .tb-count {
+    width: 100px; }
+  #stats .data-body {
+    float: left;
+    width: 100%; }
+    #stats .data-body .lbl-header {
+      font-size: 20px; }
+    #stats .data-body .line {
+      width: 100%;
+      float: left; }
+    #stats .data-body .data-header .item {
+      float: left;
+      font-weight: bold;
+      padding: 3px;
+      font-size: 1.0em; }
+    #stats .data-body .data-options {
+      border-top: solid 1px #ccc;
+      padding-top: 20px;
+      margin-top: 10px; }
+    #stats .data-body .data-container .data {
+      width: 100%; }
+      #stats .data-body .data-container .data thead {
+        font-weight: bold; }
+      #stats .data-body .data-container .data td {
+        border: solid 1px #ccc;
+        padding: 4px; }
+  #stats .control-panel {
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: right;
+    width: 100%;
+    border-top: solid 1px #999;
+    padding-top: 10px; }
+    #stats .control-panel .btn {
+      float: right;
+      margin-left: 10px; }
+
+.bootbox-confirm.modal {
+  width: 450px;
+  margin-left: -175px; }

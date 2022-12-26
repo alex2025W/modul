@@ -1,0 +1,102 @@
+/* CONTAINER */
+.planecalculation-container .btn-print {
+  float: right;
+  margin-top: 0px; }
+.planecalculation-container .btn-download-stat {
+  float: right;
+  margin-top: 0px;
+  margin-left: 10px !important; }
+.planecalculation-container .input-prepend {
+  margin-bottom: 0px !important; }
+.planecalculation-container .input-append {
+  margin-bottom: 0px !important; }
+.planecalculation-container .btn {
+  margin: 0px; }
+.planecalculation-container .tberr {
+  background-color: #f00; }
+
+/*DATA BOX*/
+/* DATA TABLE */
+.table-box {
+  width: 100%;
+  padding: 0;
+  margin: 0; }
+  .table-box thead {
+    background: whitesmoke; }
+    .table-box thead td {
+      padding: 2px;
+      border-right: solid 1px #fff;
+      background: whitesmoke; }
+    .table-box thead span {
+      font-size: 12px;
+      font-weight: bold; }
+  .table-box tbody {
+    background: #fff; }
+    .table-box tbody tr {
+      border-bottom: dashed 1px whitesmoke;
+      width: 100%; }
+      .table-box tbody tr td {
+        padding: 2px;
+        border-bottom: dashed 1px whitesmoke;
+        border-right: solid 1px whitesmoke;
+        font-size: 14px; }
+    .table-box tbody .header1 {
+      background-color: #cccccc; }
+      .table-box tbody .header1 td {
+        font-size: 18px;
+        border-right: none; }
+    .table-box tbody .header2 {
+      background: #eeeeee; }
+      .table-box tbody .header2 td {
+        font-size: 16px;
+        color: #a2a2a2;
+        border-right: none; }
+    .table-box tbody .header3 {
+      background: #f9f9f9; }
+      .table-box tbody .header3 td {
+        font-size: 16px;
+        color: #000;
+        border-right: none; }
+    .table-box tbody .collapseble {
+      cursor: pointer; }
+      .table-box tbody .collapseble td {
+        padding-left: 20px;
+        background: url(../img/minus_black.png) no-repeat left center; }
+    .table-box tbody .collapsed td {
+      padding-left: 20px;
+      background: url(../img/plus_black.png) no-repeat center left; }
+    .table-box tbody .trHover {
+      background: #ffffcc !important; }
+  .table-box .product-header {
+    font-size: 20px; }
+
+/* FIXED PANEL */
+#fixed-panel {
+  padding: 15px;
+  bottom: 0px;
+  right: 10px;
+  position: fixed;
+  display: none;
+  background: #D1E2FF;
+  border: 1px solid #D1E2FF;
+  border-radius: 6px; }
+
+.lock-item {
+  color: #000;
+  float: right;
+  margin-top: 2px;
+  cursor: pointer;
+  width: 20px; }
+
+.hol-item {
+  color: #000;
+  float: right;
+  margin-top: 2px;
+  margin-right: 25px;
+  cursor: pointer;
+  width: 20px; }
+
+.plan-row, .order-row {
+  float: left;
+  border-bottom: solid 1px #ccc;
+  margin-bottom: 7px; }

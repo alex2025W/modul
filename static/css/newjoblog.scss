@@ -1,0 +1,408 @@
+.download-settings-form{
+	width:540px;
+	margin-left: -270px;
+	padding:0;
+
+	.control-group{
+		float:left;
+		width:100%;
+		.control-label{
+			float:left;
+			width:auto;
+			margin-left:10px;
+		}
+		.controls{
+			margin-left:80px;
+		}
+	}
+	.modal-body {
+		height:320px;
+	}
+
+	.group-sectors{
+		 .multiselect-container {
+			width: 410px;
+		}
+	}
+
+	.group-teams{
+		 .multiselect-container {
+			width: 410px;
+		}
+	}
+
+	.multiselect-container>li>a {
+		white-space: normal;
+	}
+}
+
+#joblog{
+	float:left;
+	width:100%;
+	.font16{font-size:16px!important;}
+	.font14{font-size:14px!important;}
+	.pnl-workers-history-container
+	{
+		background: #eee;
+		padding:6px;
+		box-sizing: border-box;
+		margin-top:20px;
+		.data-header
+		{
+			.item{
+				border-right: none!important;
+			}
+		}
+		.data-container{
+			.edit{
+				.pnl-workers-container{
+					background: #D9EAD3!important;
+				}
+			}
+			.history-item
+			{
+				width:100%;
+				border-bottom:dashed 1px #888;
+				padding: 10px 0px 10px 0px;
+				&:first-child
+				{
+					border-top:dashed 1px #888;
+				}
+				.date
+				{
+					font-weight: bold;
+					padding-left:6px;
+				}
+				.buttons{
+					margin-top:10px;
+					padding-right:10px;
+					text-align: right;
+				}
+				.data-items
+				{
+					margin-top:10px;
+					display:table;
+					width:100%;
+					.data-item
+					{
+						display:table-row;
+						border-bottom:none!important;
+						&:last-child{
+							.item{
+								border-bottom: solid 1px #eee!important;
+							}
+						}
+						.item{
+							border-top: solid 1px #eee;
+							border-right: solid 1px #eee;
+							border-bottom:none!important;
+							padding:5px 3px 5px 3px!important;
+							&:last-child{
+								border-right: none!important;
+							}
+						}
+					}
+				}
+				.data-header
+				{
+					.item{
+						border-right: none!important;
+					}
+				}
+				/*.tb-search-workorder{
+					width:100px;
+				}
+				.token-input-list-facebook{
+					width:100px;
+					float:left;
+				}
+				.lbl-search-workorder{
+					float:left;
+					margin:3px 3px 0px 0px;
+				}
+				.link{
+					cursor:pointer;
+				}
+				.data-container{
+					display:table;
+					.data-item{
+						display:table-row;
+						border-bottom:none!important;
+						&:last-child{
+							.item{
+								border-bottom: solid 1px #eee!important;
+							}
+						}
+						.item{
+							border-top: solid 1px #eee!important;
+							border-right: solid 1px #eee!important;
+							//border-right: none!important;
+							border-bottom:none!important;
+							padding:15px 3px 6px 3px!important;
+							.tb{
+								float:left;
+								width:80%;
+							}
+							.cb{
+								float:left;
+								margin: 7px 0px 0px 5px;
+							}
+							&:last-child{
+								border-right: none!important;
+							}
+						}
+					}
+				}*/
+			}
+		}
+	}
+
+	.pnl-workers-container{
+		background: #CFE2F3;
+		padding:6px;
+		box-sizing: border-box;
+		.data-header
+		{
+			.item{
+				border-right: none!important;
+			}
+		}
+		.tb-search-workorder{
+			width:100px;
+		}
+		.token-input-list-facebook{
+			width:100px;
+			float:left;
+		}
+		.lbl-search-workorder{
+			float:left;
+			margin:3px 3px 0px 0px;
+		}
+		.link{
+			cursor:pointer;
+		}
+		.data-container{
+			display:table;
+			.data-item{
+				display:table-row;
+				border-bottom:none!important;
+				&:last-child{
+					.item{
+						border-bottom: solid 1px #eee!important;
+					}
+				}
+				.item{
+					border-top: solid 1px #eee!important;
+					border-right: solid 1px #eee!important;
+					//border-right: none!important;
+					border-bottom:none!important;
+					padding:15px 3px 6px 3px!important;
+					.tb{
+						float:left;
+						width:80%;
+					}
+					.cb{
+						float:left;
+						margin: 7px 0px 0px 5px;
+					}
+					&:last-child{
+						border-right: none!important;
+					}
+				}
+			}
+		}
+	}
+
+	.lbl{
+
+	}
+
+	.input-prepend
+	{
+		margin-bottom:0px!important;
+	}
+	.input-append
+	{
+		margin-bottom:0px!important;
+	}
+	.btn
+	{
+		margin:0px;
+	}
+	.tberr{
+		background-color: #f00;
+	}
+	.cb{
+		float:left;
+	}
+	.ddl{
+		float:left;
+		width:auto;
+	}
+	.joblog-body{
+		float:left;
+		width:100%;
+		.line{
+			width:100%;
+			float:left;
+		}
+		.lbl-header1{
+			float:left;
+			width:99%;
+			font-size: 1.3em;
+			border-bottom: solid 1px #000;
+			padding-bottom: 10px;
+		}
+		.lbl-header{
+			float:left;
+			width:99%;
+			border-bottom: solid 1px #000;
+
+			h4{
+				border-bottom: none;
+			}
+
+			.lbl{
+				float:left;
+				width:80%;
+			}
+			.crl{
+				float:right;
+			}
+		}
+
+		.data-header-container{
+			display:table;
+			width:100%;
+			.data-header{
+				display:table-row;
+				width:100%;
+				.item{
+					//float:left;
+					font-weight:bold;
+					padding:3px;
+					font-size: 1.0em;
+					display:table-cell;
+					border-right: solid 1px #fff;
+				}
+			}
+		}
+		.data-container{
+			display:table;
+			.data-item{
+				display:table-row;
+				//margin-bottom:6px;
+				&:last-child{
+					//border-bottom: solid 1px #fff;
+				}
+				.item{
+					border-bottom: solid 1px #ccc;
+					display:table-cell;
+					border-right: solid 1px #ccc;
+					vertical-align: top;
+					//float:left;
+					padding:3px 3px 9px 3px;
+					font-size: 1.0em;
+					.tb{
+						float:left;
+						width:80%;
+					}
+					.cb{
+						float:left;
+						margin: 7px 0px 0px 5px;
+						/*margin-left:50%;*/
+						/*margin-top:6px;*/
+					}
+
+					&:last-child{
+						border-right: solid 1px #fff;
+					}
+				}
+			}
+		}
+	}
+	.control-panel{
+		float:left;
+		margin-top:20px;
+		margin-bottom:20px;
+		float:right;
+		width:100%;
+		border-top:solid 1px #999;
+		padding-top:10px;
+
+		.btn{
+			float:right;
+			margin-left:10px;
+		}
+	}
+
+	#pnlTransferDate{
+		.line{
+			width:100%;
+			float:left;
+		}
+		.lbl
+		{
+			float:left;
+		}
+		.lbl2
+		{
+			font-size:1.2em;
+			float:left;
+		}
+		.control-panel{
+			float:left;
+			margin-top:20px;
+			margin-bottom:20px;
+			float:right;
+			width:100%;
+			border-top:solid 1px #999;
+			padding-top:10px;
+
+			.btn{
+				float:right;
+				margin-left:10px;
+			}
+		}
+		.pnl-transfer-header
+		{
+			padding-top:10px;
+			margin-bottom:10px;
+		}
+		.pnl-transfer-header-type
+		{
+			margin-top:10px;
+			padding-bottom:10px;
+			border-bottom: solid 1px #ccc;
+		}
+		.data-container{
+			.data-item{
+				border-top: solid 1px #ccc;
+				margin-bottom:6px;
+				.item{
+					float:left;
+					padding:3px;
+					font-size: 14px;
+					font-size: 0.9em;
+
+					.tb{
+						float:left;
+					}
+					.cb{
+						float:left;
+						margin-left:50%;
+						margin-top:6px;
+					}
+				}
+				.left{
+					width:150px;
+				}
+			}
+		}
+	}
+}
+
+.bootbox-confirm.modal{
+	width:450px;
+	margin-left:-175px;
+}

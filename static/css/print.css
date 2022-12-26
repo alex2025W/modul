@@ -1,0 +1,22 @@
+/* PRINTER SETTINGS */
+@media print {
+  /*body > *{
+      display: none!important;
+    }
+  */
+    .visible-print {
+      display: inherit !important;
+    }
+    .hidden-print
+    {
+      display: none !important;
+    }
+    #current-user
+    {
+      display:none;
+    }
+    #modalError
+    {
+      display:none;
+    }
+  }

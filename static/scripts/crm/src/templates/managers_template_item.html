@@ -1,0 +1,45 @@
+ <tr>
+        <td class="caption"><span class="not-for-desktop">Менеджер</span><%= window.MANAGERS[manager] || manager %></td>
+        <td class="w90"><span class="not-for-desktop">Активность общая</span><%= $.number( activity, 0, ',', ' ' ) %> (<%= $.number( activity_percent, 0, ',', ' ' ) %> %)</td>
+        <td class="w90"><span class="not-for-desktop">Активность значимая</span><%= $.number( activity_significant, 0, ',', ' ' ) %> (<%= $.number( activity_significant_percent, 0, ',', ' ' ) %> %)</td>
+        <td class="w90"><span class="not-for-desktop">АЗ / АО</span><%= $.number( activity_percent > 100 ? 100 : activity_percent, 0, ',', ' ' ) %>%</td>
+        <td><span class="not-for-desktop">Интерес (шт./сумма/м2)</span>
+          <div class="m_line">
+            <div class="m_item1">
+              <%= $.number( interes_ed, 0, ',', ' ' ) %>
+            </div>
+            <div class="m_item2">
+              <%= $.number( interes_summ, 0, ',', ' ' ) %>
+            </div>
+            <div class="m_item3">
+              <%= $.number( interes_sq, 0, ',', ' ' ) %>
+            </div>
+          </div>
+        </td>
+        <td><span class="not-for-desktop">В работе (шт./сумма/м2)</span>
+          <div class="m_line">
+            <div class="m_item1">
+              <%= $.number( work_ed, 0, ',', ' ' ) %>
+            </div>
+            <div class="m_item2">
+              <%= $.number( work_summ, 0, ',', ' ' ) %>
+            </div>
+            <div class="m_item3">
+              <%= $.number( work_sq, 0, ',', ' ' ) %>
+            </div>
+          </div>
+        </td>
+        <td><span class="not-for-desktop">Cтадия (шт./сумма/м2)</span>
+          <div class="m_line">
+            <div class="m_item1">
+              <%= $.number( signed_ed, 0, ',', ' ' ) %>
+            </div>
+            <div class="m_item2">
+              <%= $.number( signed_summ, 0, ',', ' ' ) %>
+            </div>
+            <div class="m_item3">
+              <%= $.number( signed_sq, 0, ',', ' ' ) %>
+            </div>
+          </div>
+        </td>
+      </tr>

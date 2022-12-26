@@ -1,0 +1,15 @@
+<tr style="background-color: #eee;">
+      <td class="caption">Всего</td>
+      <td><span class="not-for-desktop">Новые за 30 дней (шт.)</span><%= ncount %></div>
+      <td><span class="not-for-desktop">Новые за 30 дней (сумма)</span><%= $.number( nsumm, 0, ',', ' ' ) %></td>
+      <td><span class="not-for-desktop">Новые за 30 дней (площадь, м2)</span><%= $.number( nsq, 2, ',', ' ' ) %></td>
+      <td><span class="not-for-desktop">Новые за 30 дней (ср. за м2)</span><%= $.number( nav/navc, 0, ',', ' ' ) %></td>
+      <td class ='left-black-border'><span class="not-for-desktop">Старые (шт.)</span><%= ocount %></div>
+      <td><span class="not-for-desktop">Старые (сумма)</span><%= $.number( osumm, 0, ',', ' ' ) %></td>
+      <td><span class="not-for-desktop">Старые (площадь, м2)</span><%= $.number( osq, 2, ',', ' ' ) %></td>
+      <td><span class="not-for-desktop">Старые (ср. за м2)</span><%= $.number( oav/oavc, 0, ',', ' ' ) %></td>
+      <td class ='left-black-border'><span class="not-for-desktop">Всего (шт.)</span><%= ncount+ocount %></div>
+      <td><span class="not-for-desktop">Всего (сумма)</span><%= $.number( nsumm+osumm, 0, ',', ' ' ) %></td>
+      <td><span class="not-for-desktop">Всего (площадь, м2)</span><%= $.number( nsq+osq, 2, ',', ' ' ) %></td>
+      <td><span class="not-for-desktop">Всего (ср. за м2)</span><%= $.number( (oav+nav)/(oavc+navc), 0, ',', ' ' ) %></td>
+    </tr>

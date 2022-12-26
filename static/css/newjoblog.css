@@ -1,0 +1,275 @@
+.download-settings-form {
+  width: 540px;
+  margin-left: -270px;
+  padding: 0; }
+  .download-settings-form .control-group {
+    float: left;
+    width: 100%; }
+    .download-settings-form .control-group .control-label {
+      float: left;
+      width: auto;
+      margin-left: 10px; }
+    .download-settings-form .control-group .controls {
+      margin-left: 80px; }
+  .download-settings-form .modal-body {
+    height: 320px; }
+  .download-settings-form .group-sectors .multiselect-container {
+    width: 410px; }
+  .download-settings-form .group-teams .multiselect-container {
+    width: 410px; }
+  .download-settings-form .multiselect-container > li > a {
+    white-space: normal; }
+
+#joblog {
+  float: left;
+  width: 100%; }
+  #joblog .font16 {
+    font-size: 16px !important; }
+  #joblog .font14 {
+    font-size: 14px !important; }
+  #joblog .pnl-workers-history-container {
+    background: #eee;
+    padding: 6px;
+    box-sizing: border-box;
+    margin-top: 20px; }
+    #joblog .pnl-workers-history-container .data-header .item {
+      border-right: none !important; }
+    #joblog .pnl-workers-history-container .data-container .edit .pnl-workers-container {
+      background: #d9ead3 !important; }
+    #joblog .pnl-workers-history-container .data-container .history-item {
+      width: 100%;
+      border-bottom: dashed 1px #888;
+      padding: 10px 0px 10px 0px;
+      /*.tb-search-workorder{
+      	width:100px;
+      }
+      .token-input-list-facebook{
+      	width:100px;
+      	float:left;
+      }
+      .lbl-search-workorder{
+      	float:left;
+      	margin:3px 3px 0px 0px;
+      }
+      .link{
+      	cursor:pointer;
+      }
+      .data-container{
+      	display:table;
+      	.data-item{
+      		display:table-row;
+      		border-bottom:none!important;
+      		&:last-child{
+      			.item{
+      				border-bottom: solid 1px #eee!important;
+      			}
+      		}
+      		.item{
+      			border-top: solid 1px #eee!important;
+      			border-right: solid 1px #eee!important;
+      			//border-right: none!important;
+      			border-bottom:none!important;
+      			padding:15px 3px 6px 3px!important;
+      			.tb{
+      				float:left;
+      				width:80%;
+      			}
+      			.cb{
+      				float:left;
+      				margin: 7px 0px 0px 5px;
+      			}
+      			&:last-child{
+      				border-right: none!important;
+      			}
+      		}
+      	}
+      }*/ }
+      #joblog .pnl-workers-history-container .data-container .history-item:first-child {
+        border-top: dashed 1px #888; }
+      #joblog .pnl-workers-history-container .data-container .history-item .date {
+        font-weight: bold;
+        padding-left: 6px; }
+      #joblog .pnl-workers-history-container .data-container .history-item .buttons {
+        margin-top: 10px;
+        padding-right: 10px;
+        text-align: right; }
+      #joblog .pnl-workers-history-container .data-container .history-item .data-items {
+        margin-top: 10px;
+        display: table;
+        width: 100%; }
+        #joblog .pnl-workers-history-container .data-container .history-item .data-items .data-item {
+          display: table-row;
+          border-bottom: none !important; }
+          #joblog .pnl-workers-history-container .data-container .history-item .data-items .data-item:last-child .item {
+            border-bottom: solid 1px #eeeeee !important; }
+          #joblog .pnl-workers-history-container .data-container .history-item .data-items .data-item .item {
+            border-top: solid 1px #eee;
+            border-right: solid 1px #eee;
+            border-bottom: none !important;
+            padding: 5px 3px 5px 3px !important; }
+            #joblog .pnl-workers-history-container .data-container .history-item .data-items .data-item .item:last-child {
+              border-right: none !important; }
+      #joblog .pnl-workers-history-container .data-container .history-item .data-header .item {
+        border-right: none !important; }
+  #joblog .pnl-workers-container {
+    background: #CFE2F3;
+    padding: 6px;
+    box-sizing: border-box; }
+    #joblog .pnl-workers-container .data-header .item {
+      border-right: none !important; }
+    #joblog .pnl-workers-container .tb-search-workorder {
+      width: 100px; }
+    #joblog .pnl-workers-container .token-input-list-facebook {
+      width: 100px;
+      float: left; }
+    #joblog .pnl-workers-container .lbl-search-workorder {
+      float: left;
+      margin: 3px 3px 0px 0px; }
+    #joblog .pnl-workers-container .link {
+      cursor: pointer; }
+    #joblog .pnl-workers-container .data-container {
+      display: table; }
+      #joblog .pnl-workers-container .data-container .data-item {
+        display: table-row;
+        border-bottom: none !important; }
+        #joblog .pnl-workers-container .data-container .data-item:last-child .item {
+          border-bottom: solid 1px #eeeeee !important; }
+        #joblog .pnl-workers-container .data-container .data-item .item {
+          border-top: solid 1px #eeeeee !important;
+          border-right: solid 1px #eeeeee !important;
+          border-bottom: none !important;
+          padding: 15px 3px 6px 3px !important; }
+          #joblog .pnl-workers-container .data-container .data-item .item .tb {
+            float: left;
+            width: 80%; }
+          #joblog .pnl-workers-container .data-container .data-item .item .cb {
+            float: left;
+            margin: 7px 0px 0px 5px; }
+          #joblog .pnl-workers-container .data-container .data-item .item:last-child {
+            border-right: none !important; }
+  #joblog .input-prepend {
+    margin-bottom: 0px !important; }
+  #joblog .input-append {
+    margin-bottom: 0px !important; }
+  #joblog .btn {
+    margin: 0px; }
+  #joblog .tberr {
+    background-color: #f00; }
+  #joblog .cb {
+    float: left; }
+  #joblog .ddl {
+    float: left;
+    width: auto; }
+  #joblog .joblog-body {
+    float: left;
+    width: 100%; }
+    #joblog .joblog-body .line {
+      width: 100%;
+      float: left; }
+    #joblog .joblog-body .lbl-header1 {
+      float: left;
+      width: 99%;
+      font-size: 1.3em;
+      border-bottom: solid 1px #000;
+      padding-bottom: 10px; }
+    #joblog .joblog-body .lbl-header {
+      float: left;
+      width: 99%;
+      border-bottom: solid 1px #000; }
+      #joblog .joblog-body .lbl-header h4 {
+        border-bottom: none; }
+      #joblog .joblog-body .lbl-header .lbl {
+        float: left;
+        width: 80%; }
+      #joblog .joblog-body .lbl-header .crl {
+        float: right; }
+    #joblog .joblog-body .data-header-container {
+      display: table;
+      width: 100%; }
+      #joblog .joblog-body .data-header-container .data-header {
+        display: table-row;
+        width: 100%; }
+        #joblog .joblog-body .data-header-container .data-header .item {
+          font-weight: bold;
+          padding: 3px;
+          font-size: 1.0em;
+          display: table-cell;
+          border-right: solid 1px #fff; }
+    #joblog .joblog-body .data-container {
+      display: table; }
+      #joblog .joblog-body .data-container .data-item {
+        display: table-row; }
+        #joblog .joblog-body .data-container .data-item .item {
+          border-bottom: solid 1px #ccc;
+          display: table-cell;
+          border-right: solid 1px #ccc;
+          vertical-align: top;
+          padding: 3px 3px 9px 3px;
+          font-size: 1.0em; }
+          #joblog .joblog-body .data-container .data-item .item .tb {
+            float: left;
+            width: 80%; }
+          #joblog .joblog-body .data-container .data-item .item .cb {
+            float: left;
+            margin: 7px 0px 0px 5px;
+            /*margin-left:50%;*/
+            /*margin-top:6px;*/ }
+          #joblog .joblog-body .data-container .data-item .item:last-child {
+            border-right: solid 1px #fff; }
+  #joblog .control-panel {
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: right;
+    width: 100%;
+    border-top: solid 1px #999;
+    padding-top: 10px; }
+    #joblog .control-panel .btn {
+      float: right;
+      margin-left: 10px; }
+  #joblog #pnlTransferDate .line {
+    width: 100%;
+    float: left; }
+  #joblog #pnlTransferDate .lbl {
+    float: left; }
+  #joblog #pnlTransferDate .lbl2 {
+    font-size: 1.2em;
+    float: left; }
+  #joblog #pnlTransferDate .control-panel {
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: right;
+    width: 100%;
+    border-top: solid 1px #999;
+    padding-top: 10px; }
+    #joblog #pnlTransferDate .control-panel .btn {
+      float: right;
+      margin-left: 10px; }
+  #joblog #pnlTransferDate .pnl-transfer-header {
+    padding-top: 10px;
+    margin-bottom: 10px; }
+  #joblog #pnlTransferDate .pnl-transfer-header-type {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #ccc; }
+  #joblog #pnlTransferDate .data-container .data-item {
+    border-top: solid 1px #ccc;
+    margin-bottom: 6px; }
+    #joblog #pnlTransferDate .data-container .data-item .item {
+      float: left;
+      padding: 3px;
+      font-size: 14px;
+      font-size: 0.9em; }
+      #joblog #pnlTransferDate .data-container .data-item .item .tb {
+        float: left; }
+      #joblog #pnlTransferDate .data-container .data-item .item .cb {
+        float: left;
+        margin-left: 50%;
+        margin-top: 6px; }
+    #joblog #pnlTransferDate .data-container .data-item .left {
+      width: 150px; }
+
+.bootbox-confirm.modal {
+  width: 450px;
+  margin-left: -175px; }

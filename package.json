@@ -1,0 +1,42 @@
+{
+  "name": "Int.Modul",
+  "version": "1.0.0",
+  "description": "RPC Modul intranet system",
+  "main": "index.js",
+  "scripts": {
+    "scss:build": "gulp scss:build",
+    "crm:build": "gulp crm",
+    "crm:watch": "gulp crm:watch",
+    "timeline:build": "gulp timeline",
+    "timeline:watch": "gulp timeline:watch",
+    "timeline:debug": "gulp timeline_debug",
+    "contratcs_outgoing": "gulp contratcs_outgoing",
+    "contratcs_incoming": "gulp contratcs_incoming"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:modul/int.git"
+  },
+  "author": "Dmitry Cherkasov",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "browserify": "~10.2.1",
+    "gulp": "^3.9.1",
+    "gulp-browserify": "~0.5.1",
+    "gulp-line-ending-corrector": "^1.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sequence": "^0.4.5",
+    "gulp-shell": "^0.5.2",
+    "gulp-sourcemaps": "~1.5.2",
+    "gulp-uglify": "~1.2.0",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.2.4",
+    "node-underscorify": "0.0.14",
+    "requirejs": "^2.2.0",
+    "rimraf": "^2.5.2",
+    "sass": "^1.53.0",
+    "vinyl-buffer": "~1.0.0",
+    "vinyl-source-stream": "~1.1.0"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,62 @@
+.logo{
+	float: left;
+	position:absolute;
+	width: 143px;
+	height: 59px;
+	background: white url(../img/logo_125x50.gif) no-repeat;
+	top:-90px;
+	left:0px;
+}
+.line{
+	float:left;
+	width:100%;
+	position:relative;
+}
+.controls{
+	float:left;
+	width:100%;
+	label{
+		float:left;
+		width:100px;
+		text-align: right;
+		font-weight: bold;
+		padding:4px 10px 0 0;
+	}
+}
+
+.modal{
+	width:385px;
+	margin-left: -200px;
+	margin-top:100px;
+}
+
+
+.right-btn{
+	float:right;
+	margin:5px 40px 0px 0px;
+}
+
+span.error{
+	float:left;
+	color:#c00;
+	font-weight: bold;
+	width:100%;
+	text-align: center;
+	padding:0 0 15px 0;
+}
+
+.lnk{
+	color: #08c;
+	cursor:pointer;
+	border-bottom: dotted 1px #08c;
+	&:hover{
+		border-bottom: none;
+		color: #005580;
+	}
+	&.notactive{
+		color: #333;
+		cursor:default;
+		text-decoration: none!important;
+		font-style:italic;
+	}
+}

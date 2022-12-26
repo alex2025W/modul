@@ -1,0 +1,95 @@
+.bootbox-confirm.modal {
+  width: 450px;
+  margin-left: -175px;
+}
+
+.edit-material-box {
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.edit-material-box .removed td {
+  background-color: #f00;
+}
+
+.edit-material-box .edit-box {
+  width: 100%;
+  font-size: 12px;
+}
+
+.edit-material-box .edit-box tfoot td {
+  border-bottom: none;
+  text-align: right;
+}
+
+.edit-material-box .edit-box td {
+  padding: 4px;
+  vertical-align: middle;
+  border-bottom: dashed 1px #ccc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.edit-material-box .edit-box td.left {
+  min-width: 250px;
+}
+
+.edit-material-box .edit-box td.right {
+  width: 100%;
+}
+
+.edit-material-box .edit-box tr.head {
+  /*font-weight: bold;*/
+  font-size: 20px;
+}
+
+.edit-material-box .edit-box .tb {
+  width: 100%;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 30px;
+}
+
+.edit-material-box .edit-box .ddl {
+  width: auto;
+}
+
+.edit-material-box .edit-box .err {
+  background-color: #f00;
+}
+
+.edit-material-box .dropdown-menu .active {
+  background-color: #fff !important;
+}
+
+.edit-material-box .dropdown-menu input {
+  float: initial !important;
+}
+
+.edit-material-box .dropdown-menu label {
+  font-size: 12px;
+}
+
+.edit-material-box .btn-link {
+  padding: 0px;
+  font-size: 12px;
+}
+
+.edit-material-box .lnk {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0px 5px;
+  color: #000;
+}
+
+.edit-material-box .lnk:hover {
+  color: #06c;
+}
+
+.in-info td {
+  vertical-align: middle !important;
+}
+/*# sourceMappingURL=edit_material.css.map */

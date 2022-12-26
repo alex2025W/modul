@@ -1,0 +1,41 @@
+<div class="row">
+  <form class="form-horizontal span7">
+     <div class="control-group">
+      <label class="control-label" for="correspondent">От кого</label>
+      <div class="controls">
+      <div id="correspondent-dropdown">
+      <input type="text" id="correspondent" autocomplete="off" placeholder="От кого">
+      <div id="cor-exists" class="alert alert-warning hide">
+        Введённое название существует в БД. Установить связь?&nbsp;&nbsp;<a id="select-corr" class="btn" href="javascript:;">Выбрать</a>
+      </div>
+        <ul id="corr-dropdown-menu" class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu"></ul>
+      </div>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="incoming-type">Тип</label>
+      <div class="controls">
+       <select id="incoming-type">
+           <option value="">Выберите значение</option>
+            <% _(window.DICTS.incoming_type).each(function(row) { %>
+                <option value="<%= row %>"><%= row %></option>
+            <% }); %>
+       </select>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="incoming-note">Краткое содержание документа</label>
+      <div class="controls">
+        <textarea  id="incoming-note" class="span5" cols="20" rows="5"></textarea>
+      </div>
+    </div>
+    <div class="control-group">
+      <div class="controls">
+        <button id="add-btn" type="submit" class="btn">Получить номер</button>
+      </div>
+    </div>
+  </form>
+  <div class="span5">
+    <div class="alert alert-success hide"></div>
+  </div>
+</div>

@@ -1,0 +1,3 @@
+frontend_public/**
+node_modules/**
+reports/**

@@ -1,0 +1,7 @@
+<tr>
+<td class = "date"><span class="not-for-desktop">Дата:</span> <%= getloc(datetime) %></td>
+<td><span class="not-for-desktop">Название статуса:</span> <%= status == 'active'?'Работаем':'Не работаем' %></td>
+<td><span class="not-for-desktop">Примечание:</span> <%= note %></td>
+<td>
+  <span class="not-for-desktop">Пользователь:</span> <%= ALL_USERS[manager] %>
+</td>

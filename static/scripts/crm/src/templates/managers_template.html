@@ -1,0 +1,53 @@
+ <label style = "display:inline; margin-right:30px;">
+     <input type="checkbox" class="apply-filters" style="margin: 0" <%= (apply_filters=="1")?'checked':'' %>/>&nbsp;Учитывать фильтры (период: 
+     <%=  function(){ switch(all_filters.od){
+            case 'today':
+                return ('сегодня');
+            case 'yesterday':
+                return('вчера');
+            case '7days':
+                return('7 дней');
+            case '30days':
+                return('30 дней');
+            case 'all':
+                return('текущий день');
+            case undefined:
+                return('текущий день');
+            case null:
+                return('текущий день');
+            default:
+                return(all_filters.od);
+        } }() %>)     
+ </label>
+ <table class="managerstable table-bordered table">
+    <thead>
+      <tr class="managers-header">
+        <td class="caption">Менеджер</td>
+        <td title="Сколько раз в указанный период менеджер обновил состояние любой заявки." style="width:90px; text-align: center;">Активность<br>общая</td>
+        <td title="Сколько раз в указанный период менеджер обновил состояние любой заявки и это привело к росту вероятности" style="width:90px; text-align: center;">Активность<br>значимая</td>
+        <td title="Процентное отношение АЗ / АО" style="width:90px; text-align: center;">АЗ / АО</td>
+        <td>Интерес
+        <div class="m_line">
+            <div class="m_item1">шт</div>
+            <div class="m_item2">сумма</div>
+            <div class="m_item3">м<sup>2</sup></div>
+        </div>
+        </td>
+        <td>В работе
+        <div class="m_line">
+            <div class="m_item1">шт</div>
+            <div class="m_item2">сумма</div>
+            <div class="m_item3">м<sup>2</sup></div>
+        </div>
+        </td>
+        <td>Договорная стадия
+        <div class="m_line">
+            <div class="m_item1">шт</div>
+            <div class="m_item2">сумма</div>
+            <div class="m_item3">м<sup>2</sup></div>
+        </div>
+        </td>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>

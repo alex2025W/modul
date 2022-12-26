@@ -1,0 +1,52 @@
+#errors {
+  float: left;
+  width: 100%; }
+  #errors .input-prepend {
+    margin-bottom: 0px !important; }
+  #errors .input-append {
+    margin-bottom: 0px !important; }
+  #errors .btn {
+    margin: 0px; }
+  #errors .tberr {
+    background-color: #f00; }
+  #errors .cb {
+    float: left; }
+  #errors .errors-body {
+    float: left;
+    width: 100%; }
+    #errors .errors-body .line {
+      width: 100%;
+      float: left; }
+    #errors .errors-body .bold {
+      font-weight: bold; }
+    #errors .errors-body .data-header .item {
+      float: left;
+      font-weight: bold;
+      padding: 3px;
+      font-size: 1.0em; }
+    #errors .errors-body .data-container .data-item {
+      border-bottom: solid 1px #ddd;
+      margin-bottom: 10px; }
+      #errors .errors-body .data-container .data-item .item {
+        float: left;
+        padding: 3px;
+        font-size: 14px;
+        font-size: 1.0em; }
+        #errors .errors-body .data-container .data-item .item .tb {
+          float: left;
+          width: 80%; }
+        #errors .errors-body .data-container .data-item .item .cb {
+          float: left;
+          margin-left: 50%;
+          margin-top: 6px; }
+  #errors .control-panel {
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: right;
+    width: 100%;
+    border-top: solid 1px #999;
+    padding-top: 10px; }
+    #errors .control-panel .btn {
+      float: right;
+      margin-left: 10px; }

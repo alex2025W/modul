@@ -1,0 +1,49 @@
+@page {
+  margin: 30px auto; }
+
+header {
+  position: absolute !important;
+  top: 0;
+  height: 50px !important;
+  width: 99999pt !important; }
+  header #axis {
+    width: 100%; }
+    header #axis .days .tick.major text {
+      font-size: 11px !important; }
+
+#canvas {
+  margin-top: -30px;
+  width: auto !important; }
+
+#info-panel {
+  display: none !important; }
+
+#day-highlight {
+  display: none !important; }
+
+#today {
+  display: none !important; }
+
+#menu-del-dia {
+  display: none !important; }
+
+#date-ranges {
+  display: none !important; }
+
+nav {
+  display: none !important; }
+
+.timelines-container .plan-shifts {
+  display: none !important; }
+
+.timelines-container .statuses :not(.done-label) {
+  display: none !important; }
+
+.timelines-container .cell-badge {
+  display: none !important; }
+
+.timelines-container .cell-badge-text {
+  display: none !important; }
+
+footer {
+  display: none; }

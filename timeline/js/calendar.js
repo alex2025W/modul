@@ -1,0 +1,1 @@
+define(["jquery","d3","global","google.client"],function(n,i,t){var e="AIzaSyBYBwWQrtWKjTp-ZAvBQgmyf3RY4ok1nvE",o={init:function(){}};return function l(n){gapi.client?(gapi.client.setApiKey(e),o.init()):n?setTimeout(function(){l(n-1)},100):console.warn("Can‘t load Google Client Library")}(10),o});

@@ -1,0 +1,53 @@
+.edit-material-box{
+	.removed{
+		td{
+			background-color: #f00;
+		}
+
+	}
+	float:left;
+	width:100%;
+	margin-top: 20px;
+	margin-left:10px;
+	.edit-box{
+		width:100%;
+		font-size:12px;
+		tfoot{
+			td{
+				border-bottom:none;
+				text-align:right;
+			}
+		}
+		td{
+			padding:4px;
+			vertical-align:middle;
+			border-bottom:dashed 1px #ccc;
+			box-sizing: border-box;
+
+			&.left{
+				min-width:250px;
+			}
+			&.right{
+				width:100%;
+			}
+		}
+		tr{
+			&.head{
+				font-weight: bold;
+				font-size:14px;
+
+			}
+		}
+		.tb{
+			width:98%;
+			margin:0px;
+		}
+		.ddl{
+			width:auto;
+		}
+		.err{
+			background-color: #f00;
+		}
+	}
+}
+

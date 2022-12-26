@@ -1,0 +1,39 @@
+.pnl-plans-container{
+  width: 960px;
+  overflow-x: scroll;
+}
+
+.calendar-body{
+  width:100%;
+  font-size:11px;
+  margin-bottom:5px;
+  td{
+    padding:4px;
+    vertical-align:center;
+    text-align: center;
+  }
+  tbody{
+    td{
+      border:solid 1px #ccc;
+    }
+  }
+  thead{
+    td{
+      border:solid 1px #ccc;
+    }
+  }
+  tr{
+    &.head{
+      font-weight: bold;
+    }
+    &:hover {
+      background-color: whitesmoke;
+    }
+  }
+  .color-blue { background:#4384e6; }
+  .color-red { background:#ff0316; }
+  .color-yellow { background:#ffff00; }
+  .color-green { background:#CAED9E; }
+  .color-grey { background: #333333; }
+  .color-lightgrey { background: #eee; }
+}

@@ -1,0 +1,13 @@
+<span class="dropdown check_link add-on">
+    <a title="Есть совпадения" class="dropdown-toggle" data-toggle="dropdown" href="javascript:;"><i class="fa fa-users"></i></a>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+        <% _(clients).each(function(row) { %>
+            <li class="multi">
+                <div>
+                    <a href="/client-card/<%= row['id'] %>"><%= row['name'] %></a>&nbsp;
+                    [<a href="/crm#orders/&cl=<%= row['id'] %>&o=all&c=total&m=all&t=all&r=all&od=all&cd=all&ch=all&s=400&ts=order&sc=no&p=1&i=0&fa=off" id="cnt-<%= row['id'] %>">1</a>]
+                </div>
+            </li>
+        <% }); %>
+    </ul>
+</span>

@@ -1,0 +1,82 @@
+#techno_map_data_container {
+  width: 100%;
+  overflow: auto;
+  position: relative;
+  height: calc(100vh - 255px);
+  min-height: 100px; }
+  #techno_map_data_container.minimaize-height {
+    height: calc(100vh - 55px); }
+
+.techno-map-table {
+  font-family: monospace;
+  font-size: 120%;
+  min-width: 100%; }
+  .techno-map-table thead th {
+    font-weight: bold;
+    background: #b3b3b3;
+    white-space: nowrap;
+    text-align: left;
+    padding: 0;
+    border: none; }
+    .techno-map-table thead th div.head-container {
+      float: left;
+      width: 100%;
+      position: relative;
+      border-bottom: solid 3px #b3b3b3;
+      padding: 5px 10px 5px 0;
+      box-sizing: border-box; }
+    .techno-map-table thead th div.header {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      padding: 5px;
+      border-left: solid 1px #b3b3b3;
+      border-bottom: solid 3px #b3b3b3;
+      background: #fff;
+      width: 100%;
+      box-sizing: border-box; }
+  .techno-map-table thead th:last-child {
+    border-right: solid 1px #b3b3b3; }
+  .techno-map-table tbody {
+    /*margin-top:54px;
+    display: block;
+    height:300px;
+    overflow-y:auto;
+    overflow-x:hidden;
+    padding-right: 20px; */ }
+  .techno-map-table td, .techno-map-table th {
+    background: #fff;
+    font-size: 12px;
+    padding: 5px;
+    min-width: 170px;
+    border: solid 1px #b3b3b3;
+    box-sizing: border-box; }
+    .techno-map-table td.is_buy, .techno-map-table th.is_buy {
+      /*background: #eaeab8;*/ }
+    .techno-map-table td.is_own, .techno-map-table th.is_own {
+      background: #eee; }
+    .techno-map-table td.is_arr, .techno-map-table th.is_arr {
+      /*background:#efefef;*/
+      text-align: center;
+      font-size: 24px;
+      color: #000; }
+    .techno-map-table td.first-elem, .techno-map-table th.first-elem {
+      background: #d9ead3; }
+    .techno-map-table td.selected, .techno-map-table th.selected {
+      background: #ccc; }
+    .techno-map-table td.over, .techno-map-table th.over {
+      background: #BFD9F2; }
+  .techno-map-table .count-items {
+    display: table;
+    width: 100%;
+    border-top: solid 1px #aaa;
+    margin-top: 5px; }
+    .techno-map-table .count-items div {
+      padding: 2px;
+      text-align: center;
+      display: table-cell;
+      border-right: solid 1px #aaa; }
+      .techno-map-table .count-items div:last-child {
+        border-right: none; }
+
+/*# sourceMappingURL=techno_map.css.map */

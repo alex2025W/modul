@@ -1,0 +1,35 @@
+<tr>
+<td class = "date"><span class="not-for-desktop">Дата:</span> <%= getloc(datetime) %></td>
+<td><span class="not-for-desktop">Состояние:</span> <%= window.DICTS[condition] %><%= reason !=''?': '+reason:'' %></td>
+<td><span class="not-for-desktop">Вероятность:</span> <%= (chance>0?chance+" %":"Не определена") %></td>
+<td><span class="not-for-desktop">Закрытие:</span> <%= (enddate)?enddate:'?' %></td>
+<td>
+  <span class="not-for-desktop">Менеджер:</span> <a href="mailto:<%= manager %>?subject=заявка <%= number %>" target = "_blank"><%= ALL_USERS[manager] %></a><br/>
+</td>
+<td><span class="not-for-desktop">Инициатор:</span> <%= (obj.initiator=='we')?'мы':((obj.initiator=='they')?'они':'') %></td>
+<td style="white-space: normal; font-size:11px;"><span class="not-for-desktop">Конт.&nbsp;лицо:</span> <%= contact !=''? contact :'' %> <%= (('client_name' in obj)?' ('+client_name+')':'') %></td>
+</tr>
+<tr>
+    <td colspan="7" class="history-comment">
+	    <% for(var i in comments) {%>
+      <div class="history-comment-elem" data-id="<%= comments[i]['_id'] %>">
+        <span class="comment-head"><%= moment.utc(new Date(comments[i].date_add)).local().format("DD.MM.YYYY HH:mm") %>&nbsp;<a href="mailto:<%= comments[i].manager %>?subject=заявка <%= number %>" target = "_blank"><%= window.ALL_USERS[comments[i].manager] %></a></span>
+        <span class="edit-comment-span" style = "font-style: italic;" data-text="<%= comments[i].text?escape(comments[i].text):''  %>"><%= Routine.commentFormat(Routine.rNToBr(comments[i].text)) %></span>
+        <% if(glCurUser.admin=='admin' || comments[i].manager==MANAGER) { %>
+          <a href="javascript:;" class="edit-comment" >редактировать</a>
+        <% } %>
+      </div>
+    <% } %>
+
+
+
+    <a href="javascript:;" class="add-comment">Добавить комментарий</a>
+    </td>
+</tr>
+<tr>
+    <td colspan="7">
+      <% if(obj.firstcontact) { %>
+          Первый контакт:  <%= obj.firstcontact %>
+        <% } %>
+    </td>
+</tr>

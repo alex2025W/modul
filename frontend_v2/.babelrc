@@ -1,0 +1,27 @@
+{
+  "presets": [
+    ["es2015", {"modules": false}],
+    "react",
+    "stage-0"
+  ],
+  "plugins": [
+      ["transform-runtime", {
+        "helpers": false,
+        "polyfill": false,
+        "regenerator": true,
+        "moduleName": "babel-runtime"
+      }],
+    "babel-plugin-transform-class-properties",
+    "transform-object-rest-spread",
+    "styled-components"
+  ],
+  "env": {
+      "production": {
+        "plugins": [
+          "transform-react-inline-elements",
+          "transform-react-constant-elements",
+          "transform-react-remove-prop-types"
+        ]
+      }
+    }
+}

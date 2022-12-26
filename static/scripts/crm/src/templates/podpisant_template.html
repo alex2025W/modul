@@ -1,0 +1,42 @@
+<div class="span12">
+  <fieldset class="collapsible" style="margin-bottom:20px;">
+    <legend>Подписанты</legend>
+    <div class="span11 podpisant-table" style = "font-size:14px; padding-bottom:10px;">
+        <% if(!obj) {%>
+          Загрузка данных...
+        <% }else if(!obj.podpisants || obj.podpisants.length==0) {%>
+          У клиента нет подписанных договоров.
+        <% } else {%>
+          <% for(var i in obj.podpisants){ %>
+            <div class="podpis-elem"  style="float:left;"><a class="name" style="float:left; " href="/client-card/<%= obj.podpisants[i].id %>"><%= obj.podpisants[i].name %></a><div class="contract-list"  style="float:left;">: [
+                <% for(var k in obj.podpisants[i]['list'])  {%>
+                  <%= (k==0)?"":',' %>
+                  <a href="/contracts#search/<%= obj.podpisants[i]['list'][k]['number'] %>"><%= obj.podpisants[i]['list'][k]['number'] %></a>
+                <% } %>
+
+              ];&nbsp;&nbsp;</div></div>
+        <% } } %>
+    </div>
+</fieldset>
+</div>
+<div class="span12">
+  <fieldset class="collapsible" style="margin-bottom:20px;">
+    <legend>Является подписантом</legend>
+    <div class="span11 podpisant-table" style = "font-size:14px; padding-bottom:10px;">
+        <% if(!obj) {%>
+          Загрузка данных...
+        <% }else if(!obj.clpodpis || obj.clpodpis.length==0) {%>
+          У клиента нет подписанных договоров.
+        <% } else {%>
+          <% for(var i in obj.clpodpis){ %>
+            <div class="podpis-elem"  style="float:left;"><a class="name" style="float:left; " href="/client-card/<%= obj.clpodpis[i].id %>"><%= obj.clpodpis[i].name %></a><div class="contract-list"  style="float:left;">: [
+                <% for(var k in obj.clpodpis[i]['list'])  {%>
+                  <%= (k==0)?"":',' %>
+                  <a href="/contracts#search/<%= obj.clpodpis[i]['list'][k]['number'] %>"><%= obj.clpodpis[i]['list'][k]['number'] %></a>
+                <% } %>
+
+              ];&nbsp;&nbsp;</div></div>
+        <% } } %>
+    </div>
+</fieldset>
+</div>

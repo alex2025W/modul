@@ -1,0 +1,10 @@
+<td><a class="edit-contact" href="javascript:;"><%= fio %></a></td>
+<td><%= email.join('<br>') %></td>
+<td>
+	<%for(var i in phone){%>
+		<span class = "lnk lnk-phone"><%=phone[i]%></span><br/>
+	<%}%>
+</td>
+<td><%= post %></td>
+<td><%= fired_date == ''?'Работает':'Уволен с '+fired_date %></td>
+<td><a class="remove-contact remove-button" href="javascript:;">&times;</a></td>

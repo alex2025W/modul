@@ -1,0 +1,17 @@
+<!--PAGER========================================================================================-->
+<div class="list-pager" style = "<%=(count>1)?'':'display:none'%>">
+<% var start = cur_page-5;
+   if (start<1) start = 1;
+   var end = start+10;
+   if(end>count)
+    end = count;%>
+  <% if(start>1) { %><span class="over">...</span><% } %>
+  <% for(var i=start;i<=end;++i) {%>
+  <% if(i==cur_page) {%>
+    <span class="cur"><%= i %></span>
+  <% } else {%>
+    <a data-page="<%= i %>"><%=i %></a>
+  <% } %>
+  <%}%>
+  <% if(end<count) { %><span class="over">...</span><% } %>
+</div>

@@ -1,0 +1,48 @@
+version: "3.4"
+services:
+  proxy:
+    image: nginx:latest
+    container_name: itkey-nginx
+    network_mode: host
+    restart: always
+    volumes:
+      - ../nginx/conf.d/:/etc/nginx/conf.d/:ro
+      - ../nginx/ssl/:/etc/nginx/ssl/:ro
+  database:
+    ports:
+      - "27017:27017"
+    image: "mongo:3.4"
+    container_name: itkey-mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    volumes:
+     - ../mongo/db/:/data/db/
+    restart: always
+    command: --auth
+  redis:
+    ports:
+      - "6379:6379"
+    image: "redis:alpine"
+    container_name: itkey-redis
+    volumes:
+     - ../redis/conf/redis.conf:/usr/local/etc/redis/redis.conf
+     - ../redis/db/:/data/
+    command: redis-server --requirepass redis
+    restart: always
+  smtp:
+    image: "rnwood/smtp4dev:v3"
+    container_name: itkey-smtp
+    environment:
+      - ServerOptions__HostName=smtp
+    ports:
+      # Change the number before : to the port the web interface should be accessible on
+      - '20080:80'
+      # Change the number before : to the port the SMTP server should be accessible on
+      - '20025:25'
+      # Change the number before : to the port the IMAP server should be accessible on
+      - '20143:143'
+    volumes:
+      # This is where smtp4dev stores the database
+      - ../smtp:/smtp4dev
+    restart: always

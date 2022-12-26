@@ -1,0 +1,121 @@
+.upload-manager {
+	/* border: 1px solid #CCCCCC;
+	border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
+	-moz-border-radius: 4px 4px 4px 4px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); */
+	text-align: left;
+	//background: #F4F4F4;
+
+	.upload-manager-file{
+		border-top: dashed 1px #ccc;
+		padding-top: 5px;
+	}
+
+	.lbl{
+		font-size: 16px;
+	}
+
+	.no-data{
+		color: #999;
+	}
+
+
+	.hidden {
+		display: none;
+		visibility: hidden;
+	}
+
+	.btn-cancel{
+		float:right;
+	}
+
+	.file-list{
+		padding: 10px 0px 10px 0px;
+		//border-top: 1px solid #999;
+	}
+
+	footer {
+		//background: #F4F4F4;
+		border-top: 1px solid #ccc;
+		padding: 10px 0px 20px 0px;
+	}
+
+	.fileinput-button{
+		overflow: hidden;
+		position: relative;
+		input {
+			cursor: pointer;
+			direction: ltr;
+			font-size: 23px;
+			margin: 0;
+			opacity: 0;
+			-webkit-opacity: 0;
+			-moz-opacity: 0;
+			position: absolute;
+			right: 0;
+			top: 0;
+			/* transform: translate(-300px, 0px) scale(4);
+			 -webkit-transform: translate(-300px, 0px) scale(4);
+			-moz-transform: translate(-300px, 0px) scale(4);
+			-ms-transform: translate(-300px, 0px) scale(4);
+			-o-transform: translate(-300px, 0px) scale(4); */
+		}
+	}
+
+	.message.error {
+		color: #BD362F;
+	}
+	.message.done {
+		color: #57ba48;
+	}
+	.progress {
+		position: relative;
+		.progress-label {
+			position: absolute;
+			width: 100%;
+			text-align: center;
+			text-shadow: 0 0 3px rgba(0, 0, 0, 0.9);
+			color: #fff;
+		}
+	}
+
+	i{
+		background: url("../img/file_uploader/sprite.png");
+		display: inline-block;
+		vertical-align: middle;
+		margin: 4px;
+		height: 16px;
+		width: 16px;
+	}
+
+	.icon-cancel {
+		background-position: 0 0;
+	}
+	.icon-start {
+		background-position: -32px 0;
+	}
+	.icon-plus {
+		background-position: -80px 0;
+	}
+	.icon-error {
+		background-position: -96px 0;
+	}
+	.icon-success {
+		background-position: -112px 0;
+	}
+	.icon-remove {
+		background-position: -144px 0;
+	}
+}
+
+
+
+
+
+
+
+
+

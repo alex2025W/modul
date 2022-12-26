@@ -1,0 +1,45 @@
+.customer-project-block{
+  .token-input-list{
+    width:100%;
+  }
+  li.token-input-token{
+    display: inline-block;
+    padding-right: 25px;
+    margin:0px 3px;
+  }
+  li.token-input-input-token{
+    display: inline-block;
+    margin:0px 3px;
+    input{
+      float:left;
+    }
+  }
+}
+
+.client-list-container{
+  .token-input-list{
+    width:100%;
+  }
+}
+
+.empty-list{
+  float:left;
+  width:100%;
+  text-align: center;
+  font-size:16px;
+}
+
+.project-view {
+  .controls{
+    padding:5px 0;
+    line-height: 20px;
+  }
+  .control-group{
+    margin-bottom: 10px;
+  }
+  .desctiption{
+    margin-left:180px;
+    margin-top:5px;
+  }
+}
+

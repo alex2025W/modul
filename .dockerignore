@@ -1,0 +1,11 @@
+/.vscode/
+/deploy/
+/docker/
+/temp/
+/.env.sample
+/.gitignore
+/.dockerignore
+/package-lock.json
+/Pipfile
+/Pipfile.lock
+/readme.md

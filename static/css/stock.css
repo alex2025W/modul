@@ -1,0 +1,106 @@
+#stock {
+  float: left;
+  width: 100%;
+  padding-left: 10px; }
+  #stock .input-prepend {
+    margin-bottom: 0px !important; }
+  #stock .input-append {
+    margin-bottom: 0px !important; }
+  #stock .btn {
+    margin: 0px; }
+  #stock .tberr {
+    background-color: #f00; }
+  #stock .cb {
+    float: left; }
+  #stock .bold {
+    font-weight: bold !important; }
+  #stock .font24 {
+    font-size: 24px !important; }
+  #stock .font16 {
+    font-size: 16px !important; }
+  #stock .font18 {
+    font-size: 18px !important; }
+  #stock .font14 {
+    font-size: 14px !important; }
+  #stock .font12 {
+    font-size: 12px !important; }
+  #stock .color-grey {
+    color: #333333 !important; }
+  #stock .color-lightgrey {
+    color: #999999 !important; }
+  #stock .color-black {
+    color: black !important; }
+  #stock .color-blue {
+    color: #4384e6 !important; }
+  #stock .color-red {
+    color: #ff0316; }
+  #stock .color-yellow {
+    color: yellow !important; }
+  #stock .lnk {
+    padding: 2px 5px; }
+  #stock .lnk-sel {
+    background-color: #ffff00;
+    color: #000; }
+  #stock .stock-body {
+    float: left;
+    width: 100%; }
+    #stock .stock-body .lbl-header {
+      font-size: 20px; }
+    #stock .stock-body .line {
+      width: 100%;
+      float: left; }
+    #stock .stock-body .data-header .item {
+      float: left;
+      font-weight: bold;
+      padding: 3px;
+      font-size: 1.0em; }
+    #stock .stock-body .data-container {
+      margin-top: 20px; }
+      #stock .stock-body .data-container table thead th {
+        vertical-align: top; }
+      #stock .stock-body .data-container table tbody tr {
+        /*td:nth-child(1){
+        	width:10%;
+        }
+        td:nth-child(2){
+        	width:10%;
+        }
+        td:nth-child(3){
+        	width:10%;
+        }
+        td:nth-child(4){
+        	width:45%;
+        }
+        td:nth-child(5){
+        	width:5%;
+        }
+        td:nth-child(6){
+        	width:5%;
+        }
+        td:nth-child(7){
+        	width:5%;
+        }
+        td:nth-child(8){
+        	width:5%;
+        }
+        td:nth-child(9){
+        	width:5%;
+        }*/
+        /*&:hover {
+        	background-color: whitesmoke;
+         }*/ }
+  #stock .control-panel {
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: right;
+    width: 100%;
+    border-top: solid 1px #999;
+    padding-top: 10px; }
+    #stock .control-panel .btn {
+      float: right;
+      margin-left: 10px; }
+
+.bootbox-confirm.modal {
+  width: 450px;
+  margin-left: -175px; }

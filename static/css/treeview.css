@@ -1,0 +1,133 @@
+
+    .css-treeview ul,
+    .css-treeview li
+    {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    /*.css-treeview input.cb-item*/
+  .css-treeview input[type=checkbox]
+    {
+      position: absolute;
+      opacity: 0;
+      display:none;
+    }
+
+    .css-treeview .lbl-plus{
+        position:absolute;
+        width:16px;
+        display:inline-block;
+    }
+
+    .css-treeview
+    {
+      font: normal 11px;
+      /*-moz-user-select: none;
+      -webkit-user-select: none;
+      user-select: none;*/
+    }
+
+    .css-treeview a
+    {
+      color: #00f;
+      text-decoration: none;
+    }
+
+    .css-treeview a:hover
+    {
+      text-decoration: underline;
+    }
+
+    .css-treeview input + label.lbl-item + ul
+    {
+      /*margin: 0 0 0 22px;*/
+      margin: 0 0 0 14px;
+    }
+
+    .css-treeview input ~ ul
+    {
+      display: none;
+    }
+
+    .css-treeview label.lbl-item,
+    .css-treeview label.lbl-item::before
+    {
+      cursor: text;
+    }
+
+    .css-treeview input:disabled + label.lbl-item
+    {
+      cursor: text;
+      opacity: .6;
+    }
+
+    .css-treeview input:checked:not(:disabled) ~ ul
+    {
+      display: block;
+    }
+
+    /*.css-treeview label,*/
+    .css-treeview label.lbl-item::before
+    {
+      /*background: url("icons.png") no-repeat;*/
+      background: url(../img/icons.png?id=1) no-repeat left center;
+    }
+
+    .css-treeview label.lbl-item,
+    .css-treeview a,
+    .css-treeview label.lbl-item::before
+    {
+      display: inline-block;
+      /*height: 16px;
+      line-height: 16px;,*/
+      vertical-align: :top;
+
+    }
+    .css-treeview label.lbl-item::before{
+        height: 16px;
+        line-height: 16px;,
+        vertical-align: middle;
+    }
+
+    .css-treeview label.lbl-item
+    {
+      /*background-position: 18px 0;*/
+    }
+
+    .css-treeview label.lbl-item::before
+    {
+      content: "";
+      width: 16px;
+      /*margin: 0 22px 0 0;*/
+      margin: 0 0px 0 0;
+      vertical-align: middle;
+      background-position: 0 -32px;
+    }
+
+    .css-treeview input:checked + label.lbl-item::before
+    {
+      background-position: 0 -16px;
+    }
+
+    /* webkit adjacent element selector bugfix */
+    @media screen and (-webkit-min-device-pixel-ratio:0)
+    {
+      .css-treeview
+      {
+        -webkit-animation: webkit-adjacent-element-selector-bugfix infinite 1s;
+      }
+
+      @-webkit-keyframes webkit-adjacent-element-selector-bugfix
+      {
+        from
+        {
+          padding: 0;
+        }
+        to
+        {
+          padding: 0;
+        }
+      }
+    }

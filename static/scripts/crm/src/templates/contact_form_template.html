@@ -1,0 +1,81 @@
+<style>
+    .selectize-control .single {
+        width: 180px;
+    }
+</style>
+<div class="span11">
+  <fieldset class="collapsible" style="margin-bottom:20px;">
+    <legend>Редактирование контакта</legend>
+
+<div class="control-group" style="padding-top:10px;">
+      <label class="control-label" for="client-fio">ФИО:</label>
+      <div class="controls">
+        <div class="input-append">
+          <input type="text" value="<%= fio.replace(/\"/g, '&quot;')  %>" style="width:565px;" class="check-client" id="client-fio">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+    <div class="span5">
+      <div class="control-group">
+      <label class="control-label" for="client-email">Эл. почта:</label>
+      <div class="controls client-emails">
+        <div class="form-inline">
+          <div class="email-row input-append"><input type="email" style="width:200px;" value="" class="client-email check-client" id="client-email"><a href="javascript:;" class="add-on search-same-email search-same-btn"><b class="icon-search"></b></a></div>
+        </div>
+      </div>
+      <a href="javascript:;" class="btn new-email" style="float:right; margin-right:-40px;">Добавить</a>
+    </div>
+    </div>
+    <div class="span5">
+    <div class="control-group">
+      <label class="control-label" for="client-phone" style = "width:100px;">Телефон:</label>
+      <div class="controls client-phones" style = "margin-left:120px;">
+        <div class="form-inline">
+          <div class="input-append input-prepend phone-row"><span class="add-on"><label><input id="ismobile" class="ismobile" type="checkbox"> <small>моб</small></label></span><input style="width:170px;" type="text" id="client-phone" value="" class="client-phone check-client"><a href="javascript:;" class="add-on search-same-phone search-same-btn"><b class="icon-search"></b></a></div>
+        </div>
+      </div>
+     <a href="javascript:;" class="btn new-phone" style="float:right;">Добавить</a>
+    </div>
+    </div>
+    </div>
+    <div class="row">
+    <div class="span5">
+      <label class="control-label" for="client-post" >Должность</label>
+      <div class="controls client-post">
+          <div class="form-inline">
+             <div class="email-row"><input type="text" value="" class="client-post span3" id="client-post"></div>
+          </div>
+       </div>
+    </div>
+    <div class="span5">
+      <label class="control-label" for="client-fired" >Не работает с</label>
+      <div class="controls client-fired">
+          <div class="form-inline">
+             <div class="email-row"><input type="text"  value="" class="client-fired span2" id="client-fired"></div>
+          </div>
+       </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span10">
+      <label>Примечание:</label>
+      <textarea id="client-note" style="width:98.5%;"></textarea>
+    </div>
+  </div>
+    <div class="form-actions text-right" style = "background:none; padding-left: 0">
+        <div style="float: left; text-align: match-parent">
+          <span style="float: left;">Источник информации:&nbsp</span>
+          <select id="info-source" name="info-source">
+             <option value="public">Открытые источники</option>
+             <option value="personal">Получена лично</option>
+          </select>
+        </div>
+        <div class="text-right" style="padding-top: 25px">
+            <a href="javascript:;" class="btn btn-primary save-contact">Сохранить контакт</a>
+            <a href="javascript:;" class="btn close-contact">Отмена</a>
+        </div>
+    </div>
+
+</fieldset>
+</div>

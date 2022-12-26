@@ -1,0 +1,62 @@
+.pages-list .backgrid .select-row-cell,
+.pages-list .backgrid .select-all-header-cell {
+  width: 110px; }
+.pages-list .renderable.title {
+  vertical-align: middle;
+  text-align: left; }
+.pages-list .renderable.access_r, .pages-list .renderable.access_w, .pages-list .renderable.access_o {
+  width: 120px;
+  min-width: 120px;
+  max-width: 120px; }
+
+.users-list .renderable.fio, .users-list .renderable.email {
+  width: 450px;
+  min-width: 450px;
+  max-width: 450px;
+  text-align: left; }
+
+.edit-footer {
+  border-top: solid 1px #f5f5f5;
+  text-align: right;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  float: left;
+  width: 100%; }
+
+#roles-grid tr td {
+  cursor: hand;
+  cursor: pointer; }
+#roles-grid .roles-header {
+  float: left;
+  width: 100%; }
+  #roles-grid .roles-header .rl-left {
+    float: left; }
+  #roles-grid .roles-header .rl-right {
+    float: right; }
+#roles-grid .backgrid {
+  clear: both; }
+#roles-grid .renderable.title {
+  width: 800px;
+  min-width: 800px;
+  max-width: 800px;
+  text-align: left; }
+#roles-grid .backgrid tr td:nth-child(2) {
+  text-align: center; }
+
+.bootbox-confirm.modal {
+  width: 350px;
+  margin-left: -175px; }
+
+.page-grid .header {
+  background: #f9f9f9;
+  padding: 4px 10px;
+  border-bottom: 1px solid #DDD;
+  font-weight: bold; }
+  .page-grid .header a {
+    text-decoration: none; }
+.page-grid .role-elem {
+  padding: 4px 10px;
+  border-bottom: 1px solid #DDD; }
+.page-grid .additional {
+  padding: 5px 0;
+  float: left; }

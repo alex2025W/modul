@@ -1,0 +1,89 @@
+.bootbox-confirm.modal {
+  width: 450px;
+  margin-left: -175px;
+}
+
+.edit-material-box{
+  .removed{
+    td{
+      background-color: #f00;
+    }
+  }
+  float:left;
+  width:100%;
+  margin-top: 20px;
+  margin-left:10px;
+  .edit-box{
+    width:100%;
+    font-size:12px;
+    tfoot{
+      td{
+        border-bottom:none;
+        text-align:right;
+      }
+    }
+    td{
+      padding:4px;
+      vertical-align:middle;
+      border-bottom:dashed 1px #ccc;
+      box-sizing: border-box;
+
+      &.left{
+        min-width:250px;
+      }
+      &.right{
+        width:100%;
+      }
+    }
+    tr{
+      &.head{
+        /*font-weight: bold;*/
+        font-size:20px;
+      }
+    }
+    .tb{
+      width:100%;
+      margin:0px;
+      box-sizing: border-box;
+      height: 30px;
+    }
+    .ddl{
+      width:auto;
+    }
+    .err{
+      background-color: #f00;
+    }
+  }
+
+  .dropdown-menu{
+    .active{
+      background-color: #fff!important;
+    }
+    input{
+      float: initial!important;
+    }
+    label{
+      font-size:12px;
+    }
+  }
+  .btn-link{
+    padding: 0px;
+    font-size:12px;
+  }
+  .lnk{
+    display: inline-block;
+    cursor: pointer;
+    margin: 0px 5px;
+    color: #000;
+    &:hover {
+      color: #06c;
+    }
+  }
+
+}
+.in-info{
+  td{
+    vertical-align: middle!important;
+  }
+}
+

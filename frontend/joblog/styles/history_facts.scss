@@ -1,0 +1,46 @@
+// История ввода фактов
+.pnl-facts-history-container
+{
+  padding:6px;
+  box-sizing: border-box;
+  margin-top:20px;
+
+  .lbl-header1{
+    float:left;
+    width:99%;
+    font-size: 1.3em;
+    border-bottom: solid 1px #000;
+    padding-bottom: 10px;
+  }
+
+  .in-info{
+    width:100%;
+    font-size:12px;
+    margin-bottom:5px;
+    td{
+      padding:4px;
+      vertical-align:top;
+    }
+    tbody{
+      td { border:dotted 1px #ccc; }
+    }
+    .tr-comment{
+      td{
+        border:solid 1px #ccc;
+        border-top:none;
+      }
+    }
+    thead{
+      font-weight:bold;
+      td { border:dotted 1px #ccc; }
+    }
+    tr{
+      &.head{
+        font-weight: bold;
+      }
+      &:hover {
+        background-color: whitesmoke;
+      }
+    }
+  }
+}

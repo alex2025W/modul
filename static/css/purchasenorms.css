@@ -1,0 +1,100 @@
+#purchasenorms {
+  float: left;
+  width: 100%; }
+  #purchasenorms .input-prepend {
+    margin-bottom: 0px !important; }
+  #purchasenorms .input-append {
+    margin-bottom: 0px !important; }
+  #purchasenorms .btn {
+    margin: 0px; }
+  #purchasenorms .tberr {
+    background-color: #f00; }
+  #purchasenorms .cb {
+    float: left; }
+  #purchasenorms .bold {
+    font-weight: bold !important; }
+  #purchasenorms .font24 {
+    font-size: 24px !important; }
+  #purchasenorms .font16 {
+    font-size: 16px !important; }
+  #purchasenorms .font18 {
+    font-size: 18px !important; }
+  #purchasenorms .font14 {
+    font-size: 14px !important; }
+  #purchasenorms .font12 {
+    font-size: 12px !important; }
+  #purchasenorms .color-grey {
+    color: #333333 !important; }
+  #purchasenorms .color-lightgrey {
+    color: #999999 !important; }
+  #purchasenorms .color-black {
+    color: black !important; }
+  #purchasenorms .color-blue {
+    color: #4384e6 !important; }
+  #purchasenorms .color-red {
+    color: #ff0316; }
+  #purchasenorms .color-yellow {
+    color: yellow !important; }
+  #purchasenorms .purchasenorms-body {
+    float: left;
+    width: 100%; }
+    #purchasenorms .purchasenorms-body .lbl-header {
+      font-size: 20px; }
+    #purchasenorms .purchasenorms-body .line {
+      width: 100%;
+      float: left; }
+    #purchasenorms .purchasenorms-body .data-header .item {
+      float: left;
+      font-weight: bold;
+      padding: 3px;
+      font-size: 1.0em; }
+    #purchasenorms .purchasenorms-body .data-options {
+      border-top: solid 1px #ccc;
+      padding-top: 20px;
+      margin-top: 10px; }
+    #purchasenorms .purchasenorms-body .data-container {
+      margin-top: 20px; }
+      #purchasenorms .purchasenorms-body .data-container .item {
+        width: 100%;
+        float: left;
+        font-size: 1.0em; }
+        #purchasenorms .purchasenorms-body .data-container .item .cb {
+          float: left;
+          margin-top: 3px; }
+        #purchasenorms .purchasenorms-body .data-container .item label {
+          float: left; }
+        #purchasenorms .purchasenorms-body .data-container .item span {
+          float: left;
+          padding-left: 5px; }
+      #purchasenorms .purchasenorms-body .data-container .item-head .cb {
+        margin-top: 4px; }
+  #purchasenorms .control-panel {
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: right;
+    width: 100%;
+    border-top: solid 1px #999;
+    padding-top: 10px; }
+    #purchasenorms .control-panel .btn {
+      float: right;
+      margin-left: 10px; }
+  #purchasenorms .in-info {
+    width: 100%;
+    font-size: 11px; }
+    #purchasenorms .in-info td {
+      padding: 4px;
+      vertical-align: top; }
+    #purchasenorms .in-info .tr-info td {
+      border: solid 1px #ccc; }
+    #purchasenorms .in-info .tr-comment td {
+      border: solid 1px #ccc;
+      border-top: none; }
+    #purchasenorms .in-info thead {
+      font-weight: bold; }
+      #purchasenorms .in-info thead td {
+        border: solid 1px #ccc; }
+
+.bootbox-confirm.modal {
+  width: 450px;
+  margin-left: -175px; }

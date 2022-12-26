@@ -1,0 +1,9 @@
+<td><span class="not-for-desktop">Дата:</span> <%= getloc(datetime) %></td>
+<td><span class="not-for-desktop">Задача от:</span> <% if(manager) { %>
+  <a href="mailto:<%= manager %>" target = "_blank"><%= window.MANAGERS[manager] %></a>
+  <% } %>
+</td>
+<td><span class="not-for-desktop">Завершение:</span> <%= closedatetime %> <a href="javascript:;" style = "display: none;" class="change-date hide" data-date="<%= closedatetime %>" data-date-format="dd.mm.yyyy">изменить</a></td>
+<td><span class="not-for-desktop">Состояние:</span> <%= condition %></td>
+<td><span class="not-for-desktop">Примечание:</span> <%= comment %></td>
+<td><span class="not-for-desktop">Статус:</span> <span class="task-status" title = "<%=obj.finished_date?moment.utc(finished_date+'.000Z','DD.MM.YYYY HH:mm').local().format('DD.MM.YYYY HH:mm'):''%>"><%= status + (obj.overdue?' (просрочена)':'') %></span><div class="status-block hide"><a href="javascript:;" class="ex-task">Отменить</a> <a href="javascript:;" class="comp-task">Завершить</a></div></td>

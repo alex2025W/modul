@@ -1,0 +1,165 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans+Caption:700&subset=cyrillic);
+body {
+  overflow-y: scroll; }
+
+hr.header-divider {
+  margin-top: 0;
+  border-top-color: #08c; }
+
+#app {
+  margin: 0 auto;
+  float: none; }
+  #app .navi {
+    transition: .9s;
+    cursor: pointer;
+    text-decoration: none;
+    position: fixed;
+    height: 59px;
+    margin-top: -21px;
+    margin-left: -230px;
+    padding: 24px 31px 0 20px;
+    font-size: 35px;
+    color: rgba(102, 102, 102, 0.3); }
+    #app .navi:hover {
+      transition: 0.3s;
+      background: whitesmoke;
+      color: #0088cc; }
+    #app .navi span {
+      display: block;
+      margin-top: -28px;
+      margin-left: 22px;
+      font-size: 12px;
+      font-weight: bold; }
+  #app label.search-field {
+    position: relative;
+    width: 525px;
+    margin-left: -7px; }
+    #app label.search-field input {
+      width: 100%; }
+    #app label.search-field i {
+      position: absolute;
+      right: 0px;
+      margin-top: 8px;
+      margin-right: -15px; }
+
+.dataTables_wrapper .add-item {
+  float: right;
+  margin-top: 7px;
+  margin-right: 7px; }
+.dataTables_wrapper .dataTable {
+  margin-top: 43px; }
+  .dataTables_wrapper .dataTable thead th {
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    cursor: pointer; }
+    .dataTables_wrapper .dataTable thead th.sorting:after {
+      content: "\f0dc"; }
+    .dataTables_wrapper .dataTable thead th.sorting_disabled {
+      cursor: default; }
+    .dataTables_wrapper .dataTable thead th.sorting_asc:after {
+      content: "\f15d"; }
+    .dataTables_wrapper .dataTable thead th.sorting_desc:after {
+      content: "\f15e"; }
+    .dataTables_wrapper .dataTable thead th.sorting_asc.numeric:after {
+      content: "\f162"; }
+    .dataTables_wrapper .dataTable thead th.sorting_desc.numeric:after {
+      content: "\f163"; }
+    .dataTables_wrapper .dataTable thead th:after {
+      color: #aaa;
+      font-family: "FontAwesome";
+      font-weight: normal;
+      margin-left: 5px; }
+    .dataTables_wrapper .dataTable thead th.code {
+      min-width: 41px; }
+    .dataTables_wrapper .dataTable thead th.code-supp {
+      min-width: 55px; }
+  .dataTables_wrapper .dataTable tbody tr.disabled {
+    opacity: 0.65; }
+  .dataTables_wrapper .dataTable .numeric {
+    text-align: right; }
+  .dataTables_wrapper .dataTable label.checkbox {
+    min-height: 15px;
+    padding-left: 0px; }
+    .dataTables_wrapper .dataTable label.checkbox input {
+      float: right; }
+    .dataTables_wrapper .dataTable label.checkbox .fa-spin {
+      position: absolute;
+      margin-top: 3px;
+      margin-left: 23px; }
+
+.form-inline {
+  position: relative; }
+  .form-inline input.name {
+    margin-left: -7px;
+    font-size: 21px;
+    padding: 9px 6px; }
+    .form-inline input.name.span7 {
+      width: 540px; }
+  .form-inline .code {
+    transition: .9s;
+    position: absolute;
+    right: 0;
+    margin-top: -35px;
+    background: white;
+    box-shadow: -13px 0px 21px 0px white; }
+    .form-inline .code.dimmed {
+      transition: .2s;
+      opacity: 0.1; }
+  .form-inline .control-group .help-inline,
+  .form-inline .control-group .help-block {
+    visibility: hidden; }
+  .form-inline .control-group.error .help-inline,
+  .form-inline .control-group.error .help-block {
+    visibility: visible; }
+  .form-inline label.control-label {
+    display: block;
+    font-weight: bold; }
+  .form-inline .enabled-status {
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 7px;
+    margin: 0; }
+  .form-inline .form-actions {
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0; }
+  .form-inline.supplier-form {
+    min-height: 240px; }
+    .form-inline.supplier-form .enabled-status {
+      margin-top: 9px; }
+  .form-inline.good-form {
+    padding-bottom: 100px; }
+    .form-inline.good-form fieldset[disabled] {
+      overflow: hidden;
+      height: 38px; }
+    .form-inline.good-form .fieldset,
+    .form-inline.good-form .delivery {
+      border: 1px solid #e5e5e5;
+      padding: 0 5px 5px; }
+      .form-inline.good-form .fieldset legend,
+      .form-inline.good-form .delivery legend {
+        display: inline;
+        width: auto;
+        border: none;
+        padding: 0 2px;
+        margin: 0;
+        font-size: 14px; }
+        .form-inline.good-form .fieldset legend label,
+        .form-inline.good-form .delivery legend label {
+          margin-left: 0px; }
+      .form-inline.good-form .fieldset .control-group,
+      .form-inline.good-form .delivery .control-group {
+        margin-top: 0; }
+      .form-inline.good-form .fieldset .datepicker,
+      .form-inline.good-form .delivery .datepicker {
+        padding-left: 0;
+        position: relative;
+        overflow: hidden; }
+      .form-inline.good-form .fieldset .help-block,
+      .form-inline.good-form .delivery .help-block {
+        clear: both;
+        margin-bottom: 0px; }

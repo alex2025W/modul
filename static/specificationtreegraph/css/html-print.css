@@ -1,0 +1,31 @@
+#wrapper {
+  width: 100%; }
+
+#main-header {
+  display: none; }
+
+#modalError {
+  display: none; }
+
+#content {
+  background-color: white; }
+  #content #canvas {
+    margin-top: -25px; }
+  #content #print-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-family: "PT Sans", "Helvetica", sans-serif;
+    z-index: 2; }
+  #content #print-fixin {
+    display: block !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    width: 100%;
+    z-index: 1; }
+    #content #print-fixin rect {
+      fill: white; }

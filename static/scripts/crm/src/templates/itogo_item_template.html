@@ -1,0 +1,15 @@
+<tr>
+      <td class="caption"><%= window.DICTS[_id] %></td>
+      <td><span class="not-for-desktop">Новые за 30 дней (шт.)</span><%= new_count %> (<%= new_percent %>%)</div>
+      <td><span class="not-for-desktop">Новые за 30 дней (сумма)</span><%= $.number( new_price, 0, ',', ' ' ) %></td>
+      <td><span class="not-for-desktop">Новые за 30 дней (площадь, м2)</span><%= $.number( new_sq, 2, ',', ' ' ) %></td>
+      <td><span class="not-for-desktop">Новые за 30 дней (ср. за м2)</span><%= $.number( new_aver, 0, ',', ' ' ) %></td>
+      <td class ='left-black-border'><span class="not-for-desktop">Старые (шт.)</span><%= old_count %> (<%= old_percent %>%)</div>
+      <td><span class="not-for-desktop">Старые (сумма)</span><%= $.number( old_price, 0, ',', ' ' ) %></td>
+      <td><span class="not-for-desktop">Старые (площадь, м2)</span><%= $.number( old_sq, 2, ',', ' ' ) %></td>
+      <td><span class="not-for-desktop">Старые (ср. за м2)</span><%= $.number( old_aver, 0, ',', ' ' ) %></td>
+      <td class ='left-black-border'><span class="not-for-desktop">Всего (шт.)</span><<%= old_count+new_count %> (<%= ((old_count+new_count)*100/total).toFixed(0) %>%)</div>
+      <td><span class="not-for-desktop">Всего (сумма)</span><%= $.number( old_price+new_price, 0, ',', ' ' ) %></td>
+      <td><span class="not-for-desktop">Всего (площадь, м2)</span><%= $.number( old_sq+new_sq, 2, ',', ' ' ) %></td>
+      <td><span class="not-for-desktop">Всего (ср. за м2)</span><%= $.number( (old_price+new_price)/(old_sq+new_sq), 0, ',', ' ' ) %></td>
+    </tr>

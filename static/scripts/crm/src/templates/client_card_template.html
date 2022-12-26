@@ -1,0 +1,220 @@
+ <link href="/static/css/bootstrap-multiselect.css" rel="stylesheet" media="screen">
+<script src="/static/scripts/libs/bootstrap-multiselect.js"></script>
+ <script src="/static/scripts/libs/jquery.tokeninput.tst.js"></script>
+ <link href="/static/css/token-input.css" rel="stylesheet" media="screen">
+ <link href="/static/css/token-input-facebook.css" rel="stylesheet" media="screen">
+ <script src="/static/scripts/libs/moment.min.js"></script>
+
+<div class="row">
+    <div class="span6">
+      <div class="row form-inline">
+        <div class="span2">
+       <label>Форма организации:</label>
+       <input
+              autocomplete="off"
+              class="client-type"
+              value="<%= type %>"
+              type="text">
+        </div>
+        <div class="span3">
+      <label for="client-name">Название:</label>
+          <input type="text" placeholder="Название" style="width:196px;" value="<%= name.replace(/"/g, '&quot;')  %>" id="client-name">
+          <small class="text-error" style="line-height:10px;">В кавычки название не брать! ООО, ЗАО и т.п не писать!</small>
+        </div>
+        <div class="span1" style="padding-top:35px;">
+            <label  class="checkbox" style="line-height:14px;">
+                <input type="checkbox" class="cl-checkbox" <%= iscl %> >&nbsp;&nbsp;Ч-Л
+            </label>
+        </div>
+        </div>
+      </div>
+      <div class="span6">
+      <label for="client-inn">ИНН:</label>
+      <input type="text" value="<%= inn %>" id="client-inn">
+      </div>
+    </div>
+    <div class="row">
+      <div class="span3">
+        <label>
+          <input type="checkbox" class="agent-checkbox" >&nbsp;&nbsp;Посредник
+        </label>
+      </div>
+      <div class="span9 form-inline agent">
+        <label for="client-customer">Указать заказчиков:</label>
+        <input
+              autocomplete="off"
+              id="client-customer"
+              type="text">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="control-group span6">
+        <label class="control-label" for="address-textarea">Адрес:</label>
+        <div class="controls">
+          <textarea id="address-textarea" name="address-textarea" style="width:440px;" rows="3"><%= addr %></textarea>
+        </div>
+      </div>
+      <div class="control-group span6">
+        <label class="control-label" for="rekvisit-textarea">Реквизиты:</label>
+        <div class="controls">
+          <textarea id="rekvisit-textarea" name="rekvisit-textarea" style="width:440px;" rows="3"><%= rekvisit %></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="control-group span12">
+        <div class="input-prepend input-append">
+          <span class="add-on">Сайт</span>
+          <input class="span4" id="client-site" value="<%= site %>" type="text">
+          <button class="btn check-site" type="button">Проверить</button>
+      </div>
+      &nbsp;<span class="site-test-status"></span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="control-group span12">
+                <label class="control-label">Примечание:</label>
+                <div class="controls">
+                  <textarea class="span12 client-comment-text" rows="3"><%= comment %></textarea>
+                </div>
+       </div>
+   </div>
+
+    <div class="row">
+      <div class="control-group span12">
+         <label control-label>Метки:</label>
+         <div class="controls">
+            <input type="text" name="tags" class = "span12" />
+        </div>
+      </div>
+    </div>
+
+    <div class="row collapse-box">
+        <div class="span12">
+            <fieldset class="collapsible" style="margin-bottom:20px;">
+                <legend>Статус работы</legend>
+                <div class="row" style="margin-left: 0">
+                    <div class="control-group work-status-box pull-left">
+                        <label for="work-status">Текущий статус</label>
+                        <select id="work-status">
+                            <option value="active">Работаем с клиентом</option>
+                            <option value="inactive">Не работаем с клиентом</option>
+                        </select>
+                    </div>
+                    <div class="control-group work-status-comment span8 pull-right" style="display: none">
+                        <label class="control-label">Примечание:</label>
+                        <div class="controls">
+                          <textarea class="span8" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span11 history-container" style = "width: 98%"></div>
+                </div>
+                <div class="text-right">
+                    <a href="javascript:;" class="btn btn-default save-status" disabled>Сохранить<span>↑</span></a>
+                </div>
+                <br>
+            </fieldset>
+        </div>
+    </div>
+    <div class="row contacts-group collapse-box"></div>
+    <div class="row podpisant-group collapse-box"></div>
+
+    <!--БЛОК ЗАПОЛНЕНИЯ ПОЛЕЙ ЗАЯВКИ================================================================================-->
+    <% if(is_add_order) { %>
+    <div class="row collapse-box">
+        <div class="span12">
+          <fieldset class="collapsible collapsed" style="margin-bottom:20px;">
+            <legend>Заявка</legend>
+            <div class="span4" style = "display:none">
+              <div class="control-group" style="margin-top:0;">
+                <label class="control-label">Вид интереса:</label>
+                <div class="controls">
+                  <select class="span4 interes-select">
+                    <option value="0">Укажите вид интереса</option>
+                    <% _(window.DICTS.interests).each(function(row) { %>
+                        <option value="<%= row %>"><%= row %></option>
+                    <% }); %>
+                    <option value="Другое">Другое</option>
+                    <option value="Бесперспективный клиент">Бесперспективный клиент</option>
+                  </select>
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label" style="display:inline-block;">Инициатор контакта:</label>
+                <div class="controls" style="display:inline-block;">
+                  <label class="radio" style="display:inline-block;"><input type="radio" name="cl-initiator-contract" value="we">Мы</label>&nbsp;&nbsp;&nbsp;
+                  <label class="radio" style="display:inline-block;"><input type="radio" name="cl-initiator-contract" value="they">Они</label>
+                </div>
+              </div>
+
+              <div class="control-group">
+                <div class="controls" style="display:inline-block;">
+                  <label class="radio" style="display:inline-block;"><input type="radio" name="how-to-save" value="order_to_work">в работу</label>&nbsp;&nbsp;&nbsp;
+                  <label class="radio" style="display:inline-block;"><input type="radio" name="how-to-save" value="order_to_waite">отложить</label>
+                </div>
+              </div>
+
+                <% if (id) { %>
+                <label class="control-label" style="display:inline-block;">Конт. лицо:</label>
+                <div class="controls" style="display:inline-block;">
+                      &nbsp;
+                      <a href="javascript:;" class="refresh-contacts"><i class="fa fa-refresh"></i></a>
+                      &nbsp;
+                      <a href="/client-card/<%= id %>" target="_newtab" class="goto-contacts"><i class="fa fa-users"></i></a>
+                </div>
+                <select style="width:100%;" class="order-contacts" data-val=""></select>
+                <br>
+                <% }; %>
+            </div>
+            <div class="control-group span7" style = "display:none">
+              <label class="control-label">Примечание:</label>
+              <div class="controls">
+                <textarea class="span7 comment-text" rows="5"></textarea>
+              </div>
+            </div>
+            <div class="control-group span7 offse4"  style = "display:none">
+              <label class="control-label" for="first-contact">Первый контакт:</label>
+              <div class="controls">
+                <select class="span6" id="first-contact">
+                  <% _(window.DICTS.first_contact).each(function(row) { %>
+                    <option value="<%= row %>"><%= row %></option>
+                <% }); %>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+    </div>
+    <% } %>
+    <!--===============================================================-->
+
+
+    <div class="row client-lists">
+      <div class="control-group span6">
+        <label class="control-label" for="where-find">Откуда о нас узнали:</label>
+        <div class="controls">
+          <select class="span6" id="where-find">
+          <% _(window.DICTS.where_find).each(function(row) { %>
+              <option value="<%= row %>"><%= row %></option>
+          <% }); %>
+          </select>
+        </div>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="span12 text-right">
+        <!--
+        <a href="javascript:;" class="btn btn-warning save-client-wait <%= (!is_add_order)?'hide':'' %>">Отложить</a>
+        <a href="javascript:;" class="btn btn-primary save-client"><%= is_add_order?'В работу':'Сохранить карточку' %><span>&uarr;</span></a>
+        -->
+        <a href="javascript:;" class="btn btn-primary save-client">Сохранить<span>&uarr;</span></a>
+
+
+        <a href="javascript:;" class="btn close-card">Закрыть <span>&uarr;</span></a>
+        <a href="javascript:;" class="btn add-order <%= name == ''?'hide':'' %>" style = display:none;>Добавить заказ</a>
+      </div>
+    </div>
